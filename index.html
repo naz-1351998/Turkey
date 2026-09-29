@@ -329,7 +329,7 @@ FOOD.istanbulSahur=[
 ];
 
 var D=[
-{id:'d1',date:'Mon 8 Feb 2027',short:'Mon 8 Feb',title:'Land at SAW and fly to Göreme',city:'Göreme, Cappadocia',scene:'d1',imsak:'≈ 6:10 am',iftar:'≈ 6:10 pm',
+{id:'d1',date:'Mon 8 Feb 2027',short:'Mon 8 Feb',title:'Land at SAW and fly to Göreme',city:'Göreme, Cappadocia',scene:'d1',imsak:'≈ 6:10 am',iftarAt:'≈ 6:10 pm',
  sum:'A light first day. Get from Sabiha Gökçen to your cave hotel, watch sunset over the valleys and break your fast in town. Ramadan is expected to begin around 8–9 Feb, so confirm the date locally.',
  transit:[
   {mode:'✈️ Flight',title:'SAW → Kayseri (ASR) or Nevşehir (NAV)',text:'Take the domestic flight straight after your international arrival. If the two flights are on separate tickets, leave at least 3 hours between landing and the domestic departure for immigration and bags. Check the baggage allowance on the cheap fare.'},
@@ -345,7 +345,7 @@ var D=[
  iftar:FOOD.goreme,sahur:FOOD.goremeSahur,sahurFor:'tomorrow\'s sahur',
  notes:['It is your travel day and the first day of Ramadan is expected around now. Keep plans light.','Winter nights in Cappadocia drop below freezing. Dress warmly for Sunset Point.','Carry some cash (Turkish lira) for shuttles and small shops.']
 },
-{id:'d2',date:'Tue 9 Feb 2027',short:'Tue 9 Feb',title:'Cappadocia on foot, dolmuş and horseback',city:'Göreme, Cappadocia',scene:'d2',imsak:'≈ 6:10 am',iftar:'≈ 6:10 pm',
+{id:'d2',date:'Tue 9 Feb 2027',short:'Tue 9 Feb',title:'Cappadocia on foot, dolmuş and horseback',city:'Göreme, Cappadocia',scene:'d2',imsak:'≈ 6:10 am',iftarAt:'≈ 6:10 pm',
  sum:'Your one full day in Cappadocia. Watch the balloons at dawn, visit the rock-cut churches, see Uçhisar Castle, then ride through Rose and Red Valley at sunset. No car needed.',
  transit:[
   {mode:'🚶 On foot',title:'Balloon watching',text:'Balloons lift off around sunrise, about 7:40 am. Watch from your hotel terrace or the Sunset Point hill. Ask your host which rooftop has the best view.'},
@@ -363,7 +363,7 @@ var D=[
  iftar:FOOD.goreme,sahur:FOOD.goremeSahur,sahurFor:'this morning and tomorrow\'s sahur',
  notes:['Weather can cancel or shorten rides. Choose a free-cancellation booking, or confirm the day before.','Dress in thermal layers, gloves, a beanie and waterproof boots. It is colder on a horse than walking.','Dropped from this plan because they need a car: Derinkuyu, Ihlara Valley, Paşabağ and Devrent.']
 },
-{id:'d3',date:'Wed 10 Feb 2027',short:'Wed 10 Feb',title:'Bus from Göreme to Konya',city:'Konya',scene:'d3',imsak:'≈ 6:10 am (Göreme)',iftar:'≈ 6:25 pm (Konya)',
+{id:'d3',date:'Wed 10 Feb 2027',short:'Wed 10 Feb',title:'Bus from Göreme to Konya',city:'Konya',scene:'d3',imsak:'≈ 6:10 am (Göreme)',iftarAt:'≈ 6:25 pm (Konya)',
  sum:'A direct bus takes you from Cappadocia to the city of Rumi. Settle in near the Mevlana complex, see Alaaddin Hill, and share iftar and tarawih in one of Turkey\'s most devout cities.',
  transit:[
   {mode:'🚌 Intercity bus',title:'Göreme bus station → Konya bus station',text:'Direct buses (Kamil Koç, Metro Turizm, FlixBus) take roughly 3 hours 20 to 3 hours 40 and cost around €12 pp. Buses run frequently through the day. Book online on Obilet or FlixBus, or through your hotel, and aim for a departure around 9 am.',dir:['Göreme Bus Station','Konya Otogar','transit']},
@@ -380,7 +380,7 @@ var D=[
  iftar:FOOD.konya,sahur:FOOD.konyaSahur,sahurFor:'tomorrow\'s sahur',
  notes:['Konya is conservative and strongly Ramadan-focused. Many cafés and restaurants stay closed until close to iftar, so buy daytime supplies in advance if you need them.','The last bus back toward Göreme historically left around 5 pm, but you are not returning, so this only matters if plans change.','Keep your bags at the hotel and travel light between the bus station and the centre.']
 },
-{id:'d4',date:'Thu 11 Feb 2027',short:'Thu 11 Feb',title:'Mevlana, then high-speed rail to Istanbul',city:'Konya → Istanbul (Kadıköy)',scene:'d4',imsak:'≈ 6:15 am (Konya)',iftar:'≈ 6:35 pm (Istanbul)',
+{id:'d4',date:'Thu 11 Feb 2027',short:'Thu 11 Feb',title:'Mevlana, then high-speed rail to Istanbul',city:'Konya → Istanbul (Kadıköy)',scene:'d4',imsak:'≈ 6:15 am (Konya)',iftarAt:'≈ 6:35 pm (Istanbul)',
  sum:'Visit Rumi\'s mausoleum in the morning, then ride the high-speed train to Istanbul. Break your fast on the Asian side in Kadıköy, your base for the last four nights.',
  transit:[
   {mode:'🚌 City bus / tram',title:'Hotel → Konya station',text:'Trains depart from Konya Station (main station, about 3 km west of Alaaddin Hill; city bus 38 from the centre, or a short taxi) and also stop at Selçuklu YHT Station, which has a tram stop about 500 m away. Check which station your ticket uses.'},
@@ -396,7 +396,7 @@ var D=[
  iftar:FOOD.kadikoy,sahur:FOOD.istanbulSahur,sahurFor:'tomorrow\'s sahur',
  notes:['Timetables above come from a past schedule. Confirm the current February times before booking.','If your train is late, break your fast with dates and water on board.','Buy sahur groceries on the way from the station, before shops close.']
 },
-{id:'d5',date:'Fri 12 Feb 2027',short:'Fri 12 Feb',title:'Sultanahmet: Hagia Sophia, Blue Mosque, cistern and Topkapı',city:'Istanbul (Sultanahmet)',scene:'d5',imsak:'≈ 6:30 am',iftar:'≈ 6:35 pm',
+{id:'d5',date:'Fri 12 Feb 2027',short:'Fri 12 Feb',title:'Sultanahmet: Hagia Sophia, Blue Mosque, cistern and Topkapı',city:'Istanbul (Sultanahmet)',scene:'d5',imsak:'≈ 6:30 am',iftarAt:'≈ 6:35 pm',
  sum:'The old city\'s big four, ordered around Friday prayers. Do the mosques and the cistern before noon, then Topkapı Palace in the afternoon, with iftar in the historic quarter.',
  transit:[
   {mode:'⛴️ Ferry',title:'Kadıköy → Eminönü',text:'Take the Şehir Hatları public ferry from Kadıköy pier, about 20 minutes, and pay with your Istanbulkart.',dir:['Kadıköy Pier','Eminönü Pier Istanbul','transit']},
@@ -413,7 +413,7 @@ var D=[
  iftar:FOOD.sultanahmet,sahur:FOOD.istanbulSahur,sahurFor:'tomorrow\'s sahur',
  notes:['Friday midday prayer roughly 12:30–14:00: mosques limit visitors. Do Hagia Sophia and the Blue Mosque first, or pray Jumu\'ah there.','Dress modestly: covered shoulders and knees, and a headscarf for women in mosques. Shoes come off.','It is a long walking day while fasting. Take the cistern and palace at your own pace and rest in Gülhane Park.']
 },
-{id:'d6',date:'Sat 13 Feb 2027',short:'Sat 13 Feb',title:'Golden Horn: Balat, Eyüp and Süleymaniye',city:'Istanbul (Golden Horn)',scene:'d6',imsak:'≈ 6:30 am',iftar:'≈ 6:35 pm',
+{id:'d6',date:'Sat 13 Feb 2027',short:'Sat 13 Feb',title:'Golden Horn: Balat, Eyüp and Süleymaniye',city:'Istanbul (Golden Horn)',scene:'d6',imsak:'≈ 6:30 am',iftarAt:'≈ 6:35 pm',
  sum:'A quieter day along the Golden Horn: colourful Balat, the pilgrimage mosque of Eyüp, a hilltop view, and Sinan\'s Süleymaniye. Cross Galata Bridge at dusk and ferry home for iftar. No bazaars.',
  transit:[
   {mode:'⛴️ Ferry',title:'Kadıköy → Eminönü',text:'The public ferry takes about 20 minutes.',dir:['Kadıköy Pier','Eminönü Pier Istanbul','transit']},
@@ -433,7 +433,7 @@ var D=[
  iftar:FOOD.kadikoy,sahur:FOOD.istanbulSahur,sahurFor:'tomorrow\'s sahur before your flight',
  notes:['Eyüp is very busy near iftar. Aim to finish there by mid-afternoon.','Ferries are lovely but can be rough and cold. Keep your jacket on and a hood or scarf handy.','Shopping is deliberately left out. The Grand Bazaar and Spice Bazaar are not in this plan.']
 },
-{id:'d7',date:'Sun 14 Feb 2027',short:'Sun 14 Feb',title:'Sahur, metro to SAW and fly home',city:'Kadıköy → SAW',scene:'d7',imsak:'≈ 6:25 am',iftar:'≈ 6:35 pm',
+{id:'d7',date:'Sun 14 Feb 2027',short:'Sun 14 Feb',title:'Sahur, metro to SAW and fly home',city:'Kadıköy → SAW',scene:'d7',imsak:'≈ 6:25 am',iftarAt:'≈ 6:35 pm',
  sum:'Sahur, tidy up and take the M4 metro straight to the airport. You have time for a slow morning only if your flight is late.',
  transit:[
   {mode:'🚇 Metro M4',title:'Kadıköy → Sabiha Gökçen Airport',text:'M4 runs directly from Kadıköy to SAW in about 52 minutes, with trains every 5–6 minutes. It normally runs 06:00 to midnight and continuously at weekends. Leave about 4½ hours before your flight to allow for the ride, check-in and security.',dir:['Kadıköy Metro Station Istanbul','Sabiha Gökçen Airport','transit'],
@@ -522,7 +522,7 @@ function dayView(i){
   var d=D[i],prev=D[i-1],next=D[i+1];
   var h='<div class="scene">'+scene(d.scene)+'</div>'+
   '<div class="dayhead"><p class="when">'+esc(d.date)+' · '+esc(d.city)+'</p><h1>'+esc(d.title)+'</h1><p class="sum">'+esc(d.sum)+'</p>'+
-  '<div class="fast"><span>Sahur ends '+esc(d.imsak)+'</span><div class="bar" aria-hidden="true"></div><span>Iftar '+esc(d.iftar)+'</span></div></div>';
+  '<div class="fast"><span>Sahur ends '+esc(d.imsak)+'</span><div class="bar" aria-hidden="true"></div><span>Iftar '+esc(d.iftarAt)+'</span></div></div>';
   h+='<h2>Getting around today</h2>'+stepsHtml(d.transit);
   h+='<h2>Highlights</h2><p class="legend ui">Illustrations are drawn scenes. Tap "See photos" for real pictures of each place.</p>'+hlHtml(d.hl);
   h+='<h2>'+esc(d.iftarLabel||'Iftar options')+'</h2>'+filterBar(d.iftar,'iftar')+'<div class="grid" data-list="iftar">'+foodCards(d.iftar)+'</div>';
@@ -546,7 +546,7 @@ function planView(){
     return '<li class="stop"><div class="dot"><i></i><b></b></div><div><button data-go="'+s[2]+'"><h3>'+esc(s[0])+'</h3><span class="sub">'+esc(s[1])+'</span></button>'+(s[3]?'<div class="leg">'+esc(s[3])+'</div>':'')+'</div></li>';
   }).join('')+'</ul>';
   h+='<h2>Day by day</h2><div class="glance">'+D.map(function(d,i){
-    return '<button class="gcard" data-go="'+d.id+'"><div class="d">Day '+(i+1)+' · '+esc(d.short)+'</div><h4>'+esc(d.title)+'</h4><div class="d">'+esc(d.city)+'</div><div class="f">Sahur '+esc(d.imsak)+' · Iftar '+esc(d.iftar)+'</div></button>';
+    return '<button class="gcard" data-go="'+d.id+'"><div class="d">Day '+(i+1)+' · '+esc(d.short)+'</div><h4>'+esc(d.title)+'</h4><div class="d">'+esc(d.city)+'</div><div class="f">Sahur '+esc(d.imsak)+' · Iftar '+esc(d.iftarAt)+'</div></button>';
   }).join('')+'</div>';
   h+='<h2>Book first</h2><p class="legend ui">Tick items off as you book them. Your ticks are saved in this browser only.</p>'+checklist('book',BOOK);
   h+='<h2>How to read this guide</h2><div class="notes"><ul><li>Fasting times are estimates from sun position for each city. Confirm with Diyanet or your prayer app.</li><li>Every day lists iftar options and sahur options, with a halal note on each.</li><li>Shopping stops are left out on purpose, including the Grand Bazaar and Spice Bazaar.</li><li>This is a draft. Tell me what to change: pace, budget, restaurants or days.</li></ul></div>';
