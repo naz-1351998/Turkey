@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0B7A85">
+<meta name="color-scheme" content="light dark">
+<title>Cappadocia to Istanbul · Ramadan trip, 8–14 Feb 2027</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#F1F6F6;--surface:#FFFFFF;--surface2:#E4EEEF;--ink:#112238;--muted:#485A6E;--line:#C6D5D8;
+  --teal:#0B7A85;--teal-ink:#065A63;--gold:#B8801A;--gold-bg:#F7E9C6;--dusk:#2B2A5C;--rose:#A63A5A;--rose-bg:#F6DDE5;
+  --ok-bg:#DDF0EC;--focus:#0B7A85;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0C1626;--surface:#13233A;--surface2:#1A2E48;--ink:#EAF0F6;--muted:#A6B5C7;--line:#2A425F;
+    --teal:#5CC7CF;--teal-ink:#86DCE2;--gold:#F0BF55;--gold-bg:#3A3120;--dusk:#B9B6F0;--rose:#F08FAE;--rose-bg:#3B2130;
+    --ok-bg:#153B3B;--focus:#86DCE2;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0C1626;--surface:#13233A;--surface2:#1A2E48;--ink:#EAF0F6;--muted:#A6B5C7;--line:#2A425F;
+  --teal:#5CC7CF;--teal-ink:#86DCE2;--gold:#F0BF55;--gold-bg:#3A3120;--dusk:#B9B6F0;--rose:#F08FAE;--rose-bg:#3B2130;
+  --ok-bg:#153B3B;--focus:#86DCE2;
+}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.55 "Alegreya",Georgia,"Times New Roman",serif;overflow-wrap:anywhere;-webkit-tap-highlight-color:transparent}
+img,svg{max-width:100%}
+a{color:var(--teal-ink);text-underline-offset:3px}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:4px}
+.ui{font-family:"Alegreya Sans","Segoe UI",system-ui,sans-serif}
+.tile-band{height:14px;background:repeating-conic-gradient(var(--teal) 0 25%,var(--teal-ink) 0 50%) 0 0/14px 14px}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+
+/* masthead */
+.mast{padding:26px 0 14px}
+.mast h1{font-size:clamp(2rem,6.2vw,3.7rem);line-height:1.02;margin:0 0 8px;font-weight:700;letter-spacing:-.01em}
+.mast p{margin:0;max-width:60ch;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{font:500 .9rem/1 "Alegreya Sans",system-ui,sans-serif;padding:8px 12px;border-radius:999px;background:var(--surface2);color:var(--ink);border:1px solid var(--line)}
+
+/* tabs */
+.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.tabs-in{display:flex;gap:6px;overflow-x:auto;padding:8px max(14px,env(safe-area-inset-left,0px));max-width:1080px;margin:0 auto;scrollbar-width:none;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}
+.tabs-in::-webkit-scrollbar{display:none}
+.tab{flex:0 0 auto;min-height:48px;scroll-snap-align:center;touch-action:manipulation;font:500 .95rem/1 "Alegreya Sans",system-ui,sans-serif;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:10px 13px;border-radius:10px;cursor:pointer;text-align:left}
+.tab small{display:block;color:var(--muted);font-size:.72rem;margin-top:3px}
+.tab[aria-selected="true"]{background:var(--teal);border-color:var(--teal);color:#fff}
+.tab[aria-selected="true"] small{color:#E6F7F8}
+.tab.done{border-style:dashed}
+
+main{padding:22px 0 60px;min-height:70vh}
+h2{font-size:clamp(1.5rem,3.6vw,2.1rem);margin:34px 0 12px;line-height:1.15}
+h3{font-size:1.25rem;margin:0 0 6px}
+h4{margin:0 0 4px;font-size:1.08rem;line-height:1.25}
+p{margin:0 0 10px}
+
+/* hero scene */
+.scene{border-radius:18px 18px 4px 4px;overflow:hidden;line-height:0;background:#20304f}
+.scene svg{width:100%;height:clamp(150px,26vw,230px);display:block}
+.dayhead{background:var(--surface);border:1px solid var(--line);border-top:0;border-radius:4px 4px 18px 18px;padding:16px 18px 18px}
+.dayhead .when{font:500 .95rem "Alegreya Sans",system-ui,sans-serif;color:var(--muted);margin:0 0 4px}
+.dayhead h1{font-size:clamp(1.7rem,4.6vw,2.6rem);margin:0 0 6px;line-height:1.08}
+.dayhead .sum{max-width:66ch;margin:0 0 12px}
+.fast{display:flex;align-items:center;gap:10px;font:500 .95rem "Alegreya Sans",system-ui,sans-serif}
+.fast .bar{flex:1;height:8px;border-radius:99px;background:linear-gradient(90deg,#F2B632,#F2A65A 30%,var(--teal) 60%,var(--dusk))}
+.fast span{white-space:nowrap}
+.daynav{display:flex;justify-content:space-between;gap:10px;margin-top:34px;position:sticky;bottom:8px;z-index:15;padding:10px 0}
+.daynav .btn{flex:1;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,.18)}
+.btn{min-height:48px;touch-action:manipulation;font:500 1rem "Alegreya Sans",system-ui,sans-serif;border:1px solid var(--teal);background:var(--surface);color:var(--teal-ink);padding:11px 16px;border-radius:10px;cursor:pointer;text-decoration:none;display:inline-block}
+.btn.fill{background:var(--teal);color:#fff}
+
+/* steps */
+.steps{list-style:none;margin:0;padding:0;border-left:3px solid var(--teal);margin-left:18px}
+.steps li{position:relative;padding:0 0 18px 26px}
+.steps li::before{content:attr(data-n);position:absolute;left:-17px;top:0;width:31px;height:31px;border-radius:50%;background:var(--teal);color:#fff;font:700 .9rem/31px "Alegreya Sans",system-ui,sans-serif;text-align:center}
+.steps li:last-child{padding-bottom:0}
+.steps .mode{font:500 .85rem "Alegreya Sans",system-ui,sans-serif;color:var(--muted);margin-bottom:2px}
+details.alt{margin-top:6px;background:var(--surface2);border-radius:8px;padding:8px 12px}
+details.alt summary{cursor:pointer;min-height:44px;display:flex;align-items:center;font:500 .95rem "Alegreya Sans",system-ui,sans-serif}
+details.alt p{margin:8px 0 0}
+.lnk{display:inline-flex;align-items:center;min-height:44px;margin-top:2px;font:500 .95rem "Alegreya Sans",system-ui,sans-serif}
+
+/* highlights */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,270px),1fr));gap:16px}
+.hl{background:var(--surface);border:1px solid var(--line);border-radius:14px 14px 4px 4px;overflow:hidden;display:flex;flex-direction:column}
+.art{height:120px;display:grid;place-items:center;font-size:52px;background:linear-gradient(135deg,var(--a),var(--b))}
+.hl-body{padding:12px 14px 14px;display:flex;flex-direction:column;flex:1}
+.time{font:500 .85rem "Alegreya Sans",system-ui,sans-serif;color:var(--muted);margin:0 0 2px}
+.tip{background:var(--gold-bg);border-radius:6px;padding:7px 10px;font-size:.95rem;margin:6px 0 8px}
+.links{margin-top:auto;padding-top:8px;display:flex;gap:6px 18px;flex-wrap:wrap;font:500 .95rem "Alegreya Sans",system-ui,sans-serif}
+
+/* food */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 14px}
+.fchip{min-height:44px;flex:0 0 auto;touch-action:manipulation;font:500 .95rem "Alegreya Sans",system-ui,sans-serif;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:7px 12px;border-radius:999px;cursor:pointer}
+.fchip[aria-pressed="true"]{background:var(--dusk);border-color:var(--dusk);color:#fff}
+:root[data-theme="dark"] .fchip[aria-pressed="true"]{color:#12122B}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .fchip[aria-pressed="true"]{color:#12122B}}
+.food{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--teal);border-radius:4px 14px 14px 4px;padding:12px 14px}
+.food[data-type="splurge"]{border-left-color:var(--rose)}
+.food[data-type="sitdown"]{border-left-color:var(--gold)}
+.food[data-type="free"]{border-left-color:#3E9C68}
+.food[data-type="hotel"],.food[data-type="selfcater"]{border-left-color:var(--dusk)}
+.food[hidden]{display:none}
+.ftop{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+.band{font:500 .78rem "Alegreya Sans",system-ui,sans-serif;padding:4px 8px;border-radius:99px;background:var(--surface2);white-space:nowrap}
+.area{font:500 .9rem "Alegreya Sans",system-ui,sans-serif;color:var(--muted);margin:0 0 6px}
+.meta{display:flex;flex-wrap:wrap;gap:6px;font:500 .82rem "Alegreya Sans",system-ui,sans-serif;margin:8px 0 4px}
+.meta span{padding:3px 8px;border-radius:99px;background:var(--ok-bg)}
+.meta .alc{background:var(--rose-bg)}
+.meta .pr{background:var(--surface2)}
+.fnote{font-size:.95rem;color:var(--muted);margin:4px 0 4px}
+
+/* notes */
+.notes{background:var(--surface2);border-radius:12px;padding:14px 18px}
+.notes ul{margin:0;padding-left:20px}
+.notes li{margin:5px 0}
+.legend{font-size:.95rem;color:var(--muted)}
+
+/* route */
+.route{list-style:none;margin:6px 0 0;padding:0}
+.stop{display:grid;grid-template-columns:34px 1fr;gap:0 12px}
+.stop .dot{display:flex;flex-direction:column;align-items:center}
+.stop .dot i{flex:0 0 auto;width:18px;height:18px;border-radius:50%;background:var(--teal);border:4px solid var(--surface);box-shadow:0 0 0 2px var(--teal);margin-top:6px}
+.stop .dot b{flex:1;width:0;border-left:3px dashed var(--teal);min-height:36px}
+.stop:last-child .dot b{display:none}
+.stop button{all:unset;cursor:pointer;display:block;padding:8px 0 4px;min-height:44px;box-sizing:border-box}
+.stop button:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+.stop h3{margin:0}
+.stop .sub{font:500 .92rem "Alegreya Sans",system-ui,sans-serif;color:var(--muted)}
+.stop .leg{font:500 .88rem "Alegreya Sans",system-ui,sans-serif;color:var(--teal-ink);margin:6px 0 16px}
+
+/* glance */
+.glance{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));gap:14px}
+.gcard{all:unset;cursor:pointer;display:block;background:var(--surface);border:1px solid var(--line);border-radius:12px 12px 4px 12px;padding:14px}
+.gcard:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.gcard .d{font:500 .88rem "Alegreya Sans",system-ui,sans-serif;color:var(--muted)}
+.gcard h4{margin:2px 0 6px}
+.gcard .f{font:500 .86rem "Alegreya Sans",system-ui,sans-serif;color:var(--teal-ink);margin-top:8px}
+
+/* checklists */
+.check{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:8px}
+.check label{min-height:48px;display:flex;gap:12px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;cursor:pointer}
+.check input{margin-top:3px;width:24px;height:24px;flex:0 0 auto;accent-color:var(--teal)}
+.check input:checked+span{text-decoration:line-through;color:var(--muted)}
+
+/* table */
+.tw{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;min-width:520px;font-size:1rem}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:700 .92rem "Alegreya Sans",system-ui,sans-serif;background:var(--surface2)}
+td.n,th.n{text-align:right;white-space:nowrap}
+tr.total td{font-weight:700;background:var(--surface2)}
+.cards2{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px}
+footer{color:var(--muted);font-size:.95rem;padding:20px 0 40px;border-top:1px solid var(--line)}
+
+@media (max-width:640px){
+  body{font-size:17px;line-height:1.5}
+  .mast{padding:18px 0 10px}
+  .chips{flex-wrap:nowrap;overflow-x:auto;margin-right:-18px;padding-right:18px;scrollbar-width:none}
+  .chips::-webkit-scrollbar{display:none}
+  .chip{white-space:nowrap}
+  h2{margin:26px 0 10px}
+  .scene{border-radius:14px 14px 4px 4px}
+  .dayhead{padding:14px 14px 16px;border-radius:4px 4px 14px 14px}
+  .fast{flex-wrap:wrap;gap:6px 10px}
+  .fast .bar{order:3;flex:1 0 100%}
+  .filters{flex-wrap:nowrap;overflow-x:auto;margin-right:-18px;padding-right:18px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .filters::-webkit-scrollbar{display:none}
+  .art{height:96px;font-size:44px}
+  .steps{margin-left:14px}
+  .steps li{padding-left:22px}
+  .ftop{flex-direction:column;gap:6px}
+  .food{padding:12px}
+  table{min-width:460px;font-size:.95rem}
+  th,td{padding:8px 10px}
+  .notes{padding:12px 14px}
+}
+@media (max-width:380px){
+  .tab{padding:9px 10px}
+  .dayhead h1{font-size:1.55rem}
+}
+@media (prefers-reduced-motion: no-preference){.tab,.btn,.fchip{transition:background-color .15s,color .15s}}
+@media print{.tabs,.daynav,.filters{display:none}}
+</style>
+</head>
+<body>
+<div class="tile-band" aria-hidden="true"></div>
+<header class="wrap mast">
+  <h1>From Cappadocia to Istanbul</h1>
+  <p class="ui">A seven-day Ramadan route for four, by public transport only. Land and fly out of Sabiha Gökçen (SAW).</p>
+  <div class="chips ui" aria-label="Trip facts">
+    <span class="chip">8–14 Feb 2027</span>
+    <span class="chip">Group of 4</span>
+    <span class="chip">Fasting: iftar and sahur planned daily</span>
+    <span class="chip">No shopping stops</span>
+    <span class="chip">Draft for review</span>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Trip sections">
+  <div class="tabs-in" role="tablist" id="tablist"></div>
+</nav>
+
+<main class="wrap" id="view" tabindex="-1"></main>
+
+<footer class="wrap ui">
+  Times, prices and timetables are estimates from public sources and will shift by February. Confirm prayer times with Diyanet or your prayer app, and confirm opening hours, bus and train times before you go.
+</footer>
+
+<script>
+(function(){
+"use strict";
+
+/* ---------- helpers ---------- */
+var esc=function(s){return String(s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});};
+var imgUrl=function(q){return 'https://www.google.com/search?tbm=isch&q='+encodeURIComponent(q);};
+var mapUrl=function(q){return 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(q);};
+var dirUrl=function(o,d){return 'https://www.google.com/maps/dir/?api=1&origin='+encodeURIComponent(o)+'&destination='+encodeURIComponent(d)+'&travelmode=transit';};
+var store={
+  get:function(k,d){try{var v=localStorage.getItem(k);return v===null?d:JSON.parse(v);}catch(e){return d;}},
+  set:function(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
+};
+var ext=' target="_blank" rel="noopener noreferrer"';
+
+/* ---------- illustrated scenes ---------- */
+function svgWrap(a,b,label,inner){
+  return '<svg viewBox="0 0 800 220" preserveAspectRatio="xMidYMid slice" role="img" aria-label="'+esc(label)+'">'+
+  '<defs><linearGradient id="sk" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="220"><stop offset="0" stop-color="'+a+'"/><stop offset="1" stop-color="'+b+'"/></linearGradient></defs>'+
+  '<rect width="800" height="220" fill="url(#sk)"/>'+inner+'</svg>';
+}
+function chim(x,w,h,c){return '<path d="M'+x+' 220 L'+(x+w*0.36)+' '+(220-h)+' L'+(x+w*0.64)+' '+(220-h)+' L'+(x+w)+' 220Z" fill="'+c+'"/><ellipse cx="'+(x+w/2)+'" cy="'+(220-h)+'" rx="'+(w*0.4)+'" ry="'+(w*0.13)+'" fill="'+c+'"/>';}
+function dome(cx,r,c){return '<path d="M'+(cx-r)+' 220 L'+(cx-r)+' '+(220-r*0.55)+' A'+r+' '+r+' 0 0 1 '+(cx+r)+' '+(220-r*0.55)+' L'+(cx+r)+' 220Z" fill="'+c+'"/><rect x="'+(cx-2)+'" y="'+(220-r*0.55-r-14)+'" width="4" height="14" fill="'+c+'"/>';}
+function mina(x,h,c){return '<rect x="'+(x-5)+'" y="'+(220-h)+'" width="10" height="'+h+'" fill="'+c+'"/><rect x="'+(x-8)+'" y="'+(220-h+h*0.28)+'" width="16" height="4" fill="'+c+'"/><path d="M'+(x-7)+' '+(220-h)+' L'+x+' '+(220-h-28)+' L'+(x+7)+' '+(220-h)+'Z" fill="'+c+'"/>';}
+function bal(x,y,s,c){return '<ellipse cx="'+x+'" cy="'+y+'" rx="'+s+'" ry="'+(s*1.15)+'" fill="'+c+'"/><path d="M'+(x-s*0.5)+' '+(y+s*0.95)+' L'+(x-s*0.2)+' '+(y+s*1.5)+' M'+(x+s*0.5)+' '+(y+s*0.95)+' L'+(x+s*0.2)+' '+(y+s*1.5)+'" stroke="#20202c" stroke-width="1.2"/><rect x="'+(x-s*0.22)+'" y="'+(y+s*1.5)+'" width="'+(s*0.44)+'" height="'+(s*0.3)+'" fill="#20202c"/>';}
+function moon(x,y,r){return '<circle cx="'+x+'" cy="'+y+'" r="'+r+'" fill="#FFF1BD"/><circle cx="'+(x+r*0.5)+'" cy="'+(y-r*0.2)+'" r="'+(r*0.88)+'" fill="url(#sk)"/>';}
+function stars(list){return list.map(function(p){return '<circle cx="'+p[0]+'" cy="'+p[1]+'" r="'+(p[2]||1.4)+'" fill="#fff" opacity=".85"/>';}).join('');}
+function plane(x,y,s,c){return '<g transform="translate('+x+','+y+') scale('+s+')"><path d="M0 12 L46 6 L62 -8 L70 -6 L62 8 L92 10 L94 14 L62 16 L72 32 L64 34 L46 18 L0 18Z" fill="'+c+'"/></g>';}
+function scene(k){
+  var G='#171A33';
+  if(k==='d1')return svgWrap('#243A6B','#F2A65A','Cappadocia fairy chimneys at sunset with a plane overhead',
+    '<circle cx="560" cy="160" r="36" fill="#FFD68A"/>'+plane(90,44,0.9,'#fff')+
+    chim(40,90,80,G)+chim(150,60,110,G)+chim(230,110,70,G)+chim(380,70,120,G)+chim(470,100,90,G)+chim(640,80,130,G)+chim(730,70,75,G)+'<rect y="205" width="800" height="15" fill="'+G+'"/>');
+  if(k==='d2')return svgWrap('#556F9F','#F6C899','Balloons rising over the Cappadocia valleys at dawn',
+    bal(150,70,17,'#E85D4A')+bal(250,48,14,'#F2B632')+bal(340,86,15,'#2FA3A3')+bal(455,52,13,'#8E5CC6')+bal(560,92,11,'#E85D4A')+bal(690,60,12,'#F2B632')+
+    chim(30,80,90,'#3B2B4A')+chim(130,100,70,'#3B2B4A')+chim(290,70,110,'#3B2B4A')+chim(420,90,80,'#3B2B4A')+chim(600,110,100,'#3B2B4A')+chim(720,70,70,'#3B2B4A')+'<rect y="206" width="800" height="14" fill="#3B2B4A"/>');
+  if(k==='d3')return svgWrap('#2F6E8C','#F0C879','A bus on the road to Konya with the turquoise Mevlana dome ahead',
+    '<circle cx="180" cy="120" r="30" fill="#FFE2A0" opacity=".9"/>'+
+    dome(640,62,'#0E8F9A')+mina(555,120,'#0A6F78')+mina(725,120,'#0A6F78')+
+    '<path d="M0 196 L800 186 L800 220 L0 220Z" fill="#2A2A3A"/><path d="M0 204 L800 197" stroke="#F5E7B0" stroke-width="2" stroke-dasharray="14 12"/>'+
+    '<rect x="150" y="160" width="100" height="32" rx="7" fill="#F2B632"/><rect x="160" y="166" width="16" height="12" fill="#2F6E8C"/><rect x="182" y="166" width="16" height="12" fill="#2F6E8C"/><rect x="204" y="166" width="16" height="12" fill="#2F6E8C"/><rect x="226" y="166" width="16" height="12" fill="#2F6E8C"/><circle cx="175" cy="194" r="8" fill="#111"/><circle cx="228" cy="194" r="8" fill="#111"/>');
+  if(k==='d4')return svgWrap('#8FBCD8','#F4E3B8','The Mevlana dome in Konya and a high-speed train leaving',
+    '<circle cx="120" cy="70" r="26" fill="#FFF3C7"/>'+
+    dome(300,70,'#0E8F9A')+mina(215,130,'#0A6F78')+mina(385,130,'#0A6F78')+
+    '<rect y="196" width="800" height="24" fill="#3A4256"/><rect x="430" y="150" width="330" height="40" rx="14" fill="#F4F6F8"/><rect x="430" y="170" width="330" height="6" fill="#0B7A85"/>'+
+    '<rect x="450" y="158" width="26" height="12" rx="3" fill="#264B63"/><rect x="490" y="158" width="26" height="12" rx="3" fill="#264B63"/><rect x="530" y="158" width="26" height="12" rx="3" fill="#264B63"/><rect x="570" y="158" width="26" height="12" rx="3" fill="#264B63"/><rect x="610" y="158" width="26" height="12" rx="3" fill="#264B63"/><rect x="650" y="158" width="26" height="12" rx="3" fill="#264B63"/><path d="M760 150 Q790 168 760 190Z" fill="#F4F6F8"/>');
+  if(k==='d5')return svgWrap('#3B2F63','#F08A5D','Hagia Sophia and its minarets at dusk',
+    moon(110,60,22)+stars([[60,30],[200,24],[260,60],[330,30],[560,26,1.6],[640,50],[700,28]])+
+    dome(400,88,'#1E1630')+dome(292,46,'#1E1630')+dome(508,46,'#1E1630')+mina(190,150,'#1E1630')+mina(610,150,'#1E1630')+mina(120,110,'#1E1630')+mina(680,110,'#1E1630')+'<rect y="210" width="800" height="10" fill="#1E1630"/>');
+  if(k==='d6')return svgWrap('#2A2D5E','#E9967A','Suleymaniye Mosque above the Golden Horn with a ferry',
+    moon(670,50,20)+stars([[80,30],[180,50],[300,24],[420,40,1.6],[520,28]])+
+    dome(300,84,'#1F1A36')+dome(210,38,'#1F1A36')+dome(390,38,'#1F1A36')+mina(130,140,'#1F1A36')+mina(470,140,'#1F1A36')+
+    '<rect y="176" width="800" height="44" fill="#1C2A4A"/><path d="M40 190 H260 M320 198 H560 M120 208 H400" stroke="#F0B090" stroke-width="2" opacity=".5"/>'+
+    '<path d="M560 168 H700 L686 186 H574Z" fill="#F4F6F8"/><rect x="600" y="152" width="60" height="16" fill="#F4F6F8"/><rect x="618" y="140" width="24" height="12" fill="#0B7A85"/>');
+  return svgWrap('#0F1C3A','#33508A','A plane crossing a starry sky over Istanbul before flying home',
+    stars([[60,30],[140,60],[230,26],[310,70],[420,34,1.8],[520,58],[600,24],[720,66],[770,32]])+moon(150,60,24)+plane(440,64,1.6,'#fff')+
+    '<path d="M0 214 L60 190 L110 214 L170 184 L220 214 L300 176 L360 214 L440 188 L500 214 L580 180 L660 214 L720 192 L800 214 V220 H0Z" fill="#0B1226"/>');
+}
+
+/* ---------- content ---------- */
+var FOOD={};
+
+FOOD.goreme=[
+ {name:'Topdeck Cave Restaurant',area:'Göreme town',type:'sitdown',what:'Family-run restaurant inside a cave. Mezes, lamb shank, pottery kebab and good vegetarian dishes.',price:'≈ RM40–70 pp',mapQ:'Topdeck Cave Restaurant Göreme',note:'Call ahead for an iftar table: +90 384 271 24 74.'},
+ {name:'Seten Anatolian Cuisine',area:'Göreme town',type:'sitdown',what:'Stone-house restaurant known for lamb tandır and a pottery kebab cracked open at your table.',price:'≈ RM45–75 pp',mapQ:'Seten Restaurant Göreme',note:'It usually has live music. Ask whether it pauses during Ramadan.'},
+ {name:'Pumpkin Göreme Restaurant and Art Gallery',area:'Göreme town',type:'sitdown',what:'Pumpkin soup, stuffed squash, beef stew and pottery kebab in an art-filled space.',price:'≈ RM40–70 pp',mapQ:'Pumpkin Göreme Restaurant and Art Gallery'},
+ {name:'Dibek',area:'Göreme town',type:'sitdown',alc:true,what:'Old stone house with cushion seating. Order the testi (pottery) kebab ahead, since it cooks for about 3 hours. A vegetarian version exists.',price:'≈ RM45–75 pp',mapQ:'Dibek Restaurant Göreme',note:'Reviews mention house wine, so ask for a table away from the bar if you prefer.'},
+ {name:'Gurme Kebab',area:'Göreme town',type:'sitdown',what:'Lamb shank, pottery kebab, yoğurtlu beyti and burma kadayıf for dessert.',price:'≈ RM40–70 pp',mapQ:'Gurme Kebab Göreme'},
+ {name:'Local pide and lokanta shops',area:'Around Göreme bus station and main street',type:'budget',what:'Soup, pide or a home-style plate. Look for a board saying "Ramazan menüsü", which is a fixed iftar set.',price:'≈ RM20–40 pp',mapQ:'pide lokanta Göreme'}
+];
+FOOD.goremeSahur=[
+ {name:'Hotel sahur tray',area:'Your cave hotel',type:'hotel',what:'Ask the day before for a tray you can eat before 6 am: bread, cheese, olives, eggs, tomato, jam and a flask of tea. Normal hotel breakfast starts after dawn, so it is too late for sahur.',price:'Ask the hotel for a price',mapQ:'Göreme cave hotel'},
+ {name:'Self-catered from a Göreme market',area:'Göreme town',type:'selfcater',what:'Buy at iftar time, before shops close: bread, white cheese, eggs, olives, dates, yoghurt and bananas.',price:'≈ RM8–15 pp',mapQ:'supermarket Göreme'},
+ {name:'Fresh bread from a bakery (fırın)',area:'Göreme town',type:'selfcater',what:'Pick up pide or simit in the evening and keep it wrapped for sahur.',price:'≈ RM3–8 pp',mapQ:'fırın bakery Göreme'}
+];
+FOOD.konya=[
+ {name:'Celal Bey Etli Ekmek 1985',area:'Türbe Cd. 37A, Aziziye. A few minutes from Mevlana',type:'budget',what:'Konya meat flatbread (etli ekmek). Order bıçak arası (thin, crisp) with soup and ayran. A whole etli ekmek is about ₺150–250 at 2026 prices.',price:'≈ RM20–35 pp',mapQ:'Celal Bey Etli Ekmek 1985 Konya',note:'Very popular. Arrive 30–45 minutes before iftar.'},
+ {name:'Ali Baba Fırın Kebap',area:'Şeref Şirin Sk. 5/A. Near Mevlana',type:'sitdown',what:'Fırın kebabı, which is lamb roasted in a wood oven. Locals rate it among the best in Konya.',price:'≈ RM35–60 pp',mapQ:'Ali Baba Fırın Kebap Konya',note:'Listings show it may close early evening, so call to confirm iftar hours: +90 332 351 03 07.'},
+ {name:'Kebapçı Dedeler 1929',area:'Near Mevlana',type:'sitdown',what:'Long-running kebab house close to the mausoleum.',price:'≈ RM35–60 pp',mapQ:'Kebapçı Dedeler 1929 Konya'},
+ {name:'Lokmahane',area:'Old wooden house near Mevlana',type:'sitdown',what:'Etli ekmek, bamya (okra) soup and hoşmerim dessert. The terrace looks over the Mevlana Museum and Selimiye Mosque.',price:'≈ RM30–55 pp',mapQ:'Lokmahane Konya',note:'Ask for a terrace table, and book if you can.'},
+ {name:'Maruf Türbeönü Lokantası',area:'Directly beside the mausoleum area',type:'budget',what:'Home-style Konya lokanta food. Pick from the counter.',price:'≈ RM20–35 pp',mapQ:'Maruf Türbeönü Lokantası Konya'},
+ {name:'Cemo Etliekmek',area:'Central Konya',type:'budget',what:'Etli ekmek and bamya soup, with a simple picture menu that makes ordering easy.',price:'≈ RM15–30 pp',mapQ:'Cemo Etliekmek Konya',note:'Listed as open until about 10 pm.'},
+ {name:'Sultan Somatı (Table of Sultan)',area:'Near Mevlana',type:'splurge',what:'Sit-down Anatolian and Mediterranean dishes with very high ratings.',price:'≈ RM60–100 pp',mapQ:'Sultan Somatı Konya'}
+];
+FOOD.konyaSahur=[
+ {name:'Hotel sahur tray',area:'Your Konya hotel',type:'hotel',what:'Ask at check-in for a tray before 6:15 am, and ask whether the kitchen can leave it at reception.',price:'Ask the hotel for a price',mapQ:'hotel near Mevlana Museum Konya'},
+ {name:'Self-catered from a market',area:'Near your hotel',type:'selfcater',what:'Buy bread, cheese, eggs, olives, dates and yoghurt after iftar. The nearby BİM, A101 or Şok stores are the easiest.',price:'≈ RM8–15 pp',mapQ:'market near Mevlana Museum Konya'},
+ {name:'Late-night sahur menus',area:'Around Mevlana Caddesi',type:'eatout',what:'Some restaurants open around dawn in Ramadan. Search Maps for "sahur" near your hotel and confirm that night\'s hours.',price:'Varies',mapQ:'sahur Konya Mevlana'}
+];
+FOOD.kadikoy=[
+ {name:'Çiya Sofrası',area:'Kadıköy, central. Three branches close together',type:'sitdown',what:'Anatolian home cooking: seasonal stews, stuffed vegetables, kebabs and desserts. One of Istanbul\'s best-known restaurants.',price:'≈ RM50–90 pp',mapQ:'Çiya Sofrası Kadıköy',note:'Arrive about 45 minutes before iftar to avoid queues.'},
+ {name:'Yanyalı Fehmi Lokantası',area:'Kadıköy',type:'sitdown',what:'Traditional lokanta serving classic Turkish dishes.',price:'≈ RM40–70 pp',mapQ:'Yanyalı Fehmi Lokantası Kadıköy'},
+ {name:'Khalkedon Cafe Restaurant',area:'Kadıköy seafront',type:'sitdown',what:'Run by the Kadıköy municipality, with sea views and an iftar menu.',price:'≈ RM40–70 pp',mapQ:'Khalkedon Cafe Restaurant Kadıköy'},
+ {name:'Neighbourhood lokanta or pide shop',area:'Kadıköy Çarşı (market streets)',type:'budget',what:'Look for "Ramazan menüsü" boards: soup, main and dessert as a fixed set.',price:'≈ RM20–40 pp',mapQ:'lokanta Kadıköy Çarşı'},
+ {name:'Ramazan pidesi and soup at home',area:'Any Kadıköy bakery, then your apartment',type:'budget',what:'Buy warm Ramazan pidesi just before iftar. Eat it with dates, olives and cheese. This is the easiest option on arrival day.',price:'≈ RM10–20 pp',mapQ:'fırın Kadıköy'}
+];
+FOOD.sultanahmet=[
+ {name:'Sultanahmet Square iftar tent',area:'Sultanahmet Square',type:'free',what:'Municipal iftar tents are typically set up at Sultanahmet and Eyüp during Ramadan, serving free community meals. Queues start early.',price:'Free or low cost',mapQ:'Sultanahmet Square Istanbul',note:'Locations change every year, so confirm on the Istanbul municipality announcements.'},
+ {name:'Tarihi Sultanahmet Köftecisi Selim Usta',area:'Divan Yolu Cad. 12',type:'sitdown',what:'Classic grilled köfte with piyaz salad. Its 2026 set iftar menu was about ₺1,100 pp (≈ RM90), but ordering à la carte is much cheaper.',price:'≈ RM30–90 pp',mapQ:'Tarihi Sultanahmet Köftecisi Selim Usta'},
+ {name:'Konyalı Restaurant, Topkapı Palace grounds',area:'Inside Topkapı Palace gardens',type:'sitdown',what:'Serving since 1897, with an iftar menu and palace-garden setting. Good if you stay near the palace after visiting.',price:'≈ RM60–110 pp',mapQ:'Konyalı Restaurant Topkapı Palace'},
+ {name:'Deraliye Ottoman Restaurant',area:'Divan Yolu Cad., Ticarethane Sk. 10',type:'splurge',what:'Ottoman palace cuisine with a Ramadan iftar menu.',price:'≈ RM100+ pp',mapQ:'Deraliye Restaurant Sultanahmet'},
+ {name:'Matbah Ottoman Palace Cuisine',area:'Sultanahmet',type:'splurge',what:'A 2026 iftar set began with dates, white cheese, honey, walnuts, olives and Ramazan pidesi, then slow-cooked mains.',price:'≈ RM100+ pp',mapQ:'Matbah Restaurant Sultanahmet'},
+ {name:'Hamdi Restaurant',area:'Eminönü, Tahmis Cad. Kalçın Sk. 11',type:'splurge',what:'Terrace over the mosques and the water. Its 2026 iftar set was ₺2,250 pp (≈ RM190).',price:'≈ RM190 pp (2026 price)',mapQ:'Hamdi Restaurant Eminönü'},
+ {name:'Eminönü balık ekmek (fish sandwich)',area:'By the Galata Bridge',type:'budget',what:'Grilled fish in bread. A light, cheap iftar that goes well with soup from a nearby lokanta.',price:'≈ RM10–18 pp',mapQ:'balık ekmek Eminönü'}
+];
+FOOD.istanbulSahur=[
+ {name:'Self-catered at the apartment (recommended)',area:'Kadıköy',type:'selfcater',what:'Shop after iftar at Migros, BİM, A101 or Şok, or at the Kadıköy Çarşı grocers: bread, white cheese, olives, eggs, honey, yoghurt, dates and bananas.',price:'≈ RM8–15 pp',mapQ:'supermarket Kadıköy'},
+ {name:'Cook menemen',area:'Your apartment kitchen',type:'selfcater',what:'Eggs, tomatoes, green peppers and cheese make a quick, filling Turkish sahur. Add bread and tea.',price:'≈ RM5–10 pp',mapQ:'market Kadıköy Çarşı'},
+ {name:'Late-night restaurants with a sahur menu',area:'Kadıköy and Beyoğlu',type:'eatout',what:'Some restaurants stay open until dawn in Ramadan. Search Maps for "sahur" near your apartment and confirm that night\'s hours before you go out.',price:'Varies',mapQ:'sahur Kadıköy'}
+];
+
+var D=[
+{id:'d1',date:'Mon 8 Feb 2027',short:'Mon 8 Feb',title:'Land at SAW and fly to Göreme',city:'Göreme, Cappadocia',scene:'d1',imsak:'≈ 6:10 am',iftar:'≈ 6:10 pm',
+ sum:'A light first day. Get from Sabiha Gökçen to your cave hotel, watch sunset over the valleys and break your fast in town. Ramadan is expected to begin around 8–9 Feb, so confirm the date locally.',
+ transit:[
+  {mode:'✈️ Flight',title:'SAW → Kayseri (ASR) or Nevşehir (NAV)',text:'Take the domestic flight straight after your international arrival. If the two flights are on separate tickets, leave at least 3 hours between landing and the domestic departure for immigration and bags. Check the baggage allowance on the cheap fare.'},
+  {mode:'🚌 Airport shuttle',title:'Airport → Göreme hotel',text:'Book a shared shuttle in advance, about €10 pp from Kayseri (about 1 to 1¼ hours) and similar from Nevşehir (about 1 hour). Send the provider your flight number so they track delays. Some operators take cash only.',
+    alt:'Fully public backup from Kayseri: Havaş airport bus to Kayseri bus station, an intercity bus to Nevşehir, then a minibus (dolmuş) to Göreme. It takes about 3 hours, so use it only if the shuttle falls through.'},
+  {mode:'🚶 On foot',title:'Around Göreme',text:'The town is compact. Your hotel, restaurants and Sunset Point are all walkable.'}
+ ],
+ hl:[
+  {time:'Afternoon',title:'Check in to your cave hotel',text:'Rest and settle in. Cave rooms are cosy and quiet, and many have heated floors. Ask about a sahur tray for tomorrow.',icon:'🛏️',photo:'Cappadocia cave hotel Göreme room',map:'cave hotel Göreme'},
+  {time:'About 45 min before sunset',title:'Sunset Point over Göreme',text:'A short walk up to a viewpoint over the fairy chimneys. Time your descent for iftar.',icon:'🌇',photo:'Göreme Sunset Point Cappadocia',map:'Göreme Sunset Point',tip:'Carry dates and water in case the sun sets before you are back.'},
+  {time:'Evening',title:'Göreme old town at dusk',text:'Wander the lit-up stone houses and small squares before or after iftar.',icon:'🏘️',photo:'Göreme town Cappadocia evening',map:'Göreme town centre'}
+ ],
+ iftar:FOOD.goreme,sahur:FOOD.goremeSahur,sahurFor:'tomorrow\'s sahur',
+ notes:['It is your travel day and the first day of Ramadan is expected around now. Keep plans light.','Winter nights in Cappadocia drop below freezing. Dress warmly for Sunset Point.','Carry some cash (Turkish lira) for shuttles and small shops.']
+},
+{id:'d2',date:'Tue 9 Feb 2027',short:'Tue 9 Feb',title:'Cappadocia on foot, dolmuş and horseback',city:'Göreme, Cappadocia',scene:'d2',imsak:'≈ 6:10 am',iftar:'≈ 6:10 pm',
+ sum:'Your one full day in Cappadocia. Watch the balloons at dawn, visit the rock-cut churches, see Uçhisar Castle, then ride through Rose and Red Valley at sunset. No car needed.',
+ transit:[
+  {mode:'🚶 On foot',title:'Balloon watching',text:'Balloons lift off around sunrise, about 7:40 am. Watch from your hotel terrace or the Sunset Point hill. Ask your host which rooftop has the best view.'},
+  {mode:'🚶 On foot',title:'Göreme town → Göreme Open-Air Museum',text:'About 1–1.5 km uphill, roughly 20–25 minutes. Take care on icy stretches.',dir:['Göreme town','Göreme Open Air Museum','walking']},
+  {mode:'🚌 Dolmuş',title:'Göreme → Uçhisar',text:'Minibuses (dolmuş) run from the Göreme bus station toward Uçhisar. Winter frequency is lower, so ask at the station. If none is due, share a taxi and agree the fare before you get in.',
+    alt:'Walking alternative: Pigeon Valley walk from Uçhisar back toward Göreme is about 4–5 km. Skip it if trails are icy.'},
+  {mode:'🐎 Horse ride',title:'Sunset ride, hotel pickup',text:'Most Göreme operators include free hotel pickup, so no car is needed. Book a 2-hour sunset slot, typically starting around 4 pm, and book once the forecast looks clear.'}
+ ],
+ hl:[
+  {time:'Sunrise',title:'Balloons over the valleys',text:'Watching is free and lovely. On winter mornings more balloons stay grounded, so keep the day flexible.',icon:'🎈',photo:'Cappadocia hot air balloons sunrise Göreme',map:'Göreme Cappadocia viewpoint'},
+  {time:'Morning',title:'Göreme Open-Air Museum',text:'A cluster of rock-cut churches and monasteries with Byzantine frescoes. Check Ramadan opening hours before you go.',icon:'⛪',photo:'Göreme Open Air Museum Cappadocia churches',map:'Göreme Open Air Museum'},
+  {time:'Early afternoon',title:'Uçhisar Castle',text:'A giant rock citadel with wide views over Cappadocia. The climb is short but steep, and stone steps can be icy.',icon:'🏰',photo:'Uçhisar Castle Cappadocia',map:'Uçhisar Castle',tip:'Climb early. Save energy for the ride.'},
+  {time:'About 4 pm',title:'Sunset horse ride, Rose and Red Valley',text:'A guided 2-hour ride through canyons and fairy chimneys. Beginner-friendly. Operators list about €30–45 pp, some with a weight limit of around 90 kg and cash payment.',icon:'🐎',photo:'Cappadocia sunset horse riding Rose Valley',map:'horse riding Göreme Cappadocia',tip:'Tell the guide you are fasting. Carry dates and water for sunset.'}
+ ],
+ iftar:FOOD.goreme,sahur:FOOD.goremeSahur,sahurFor:'this morning and tomorrow\'s sahur',
+ notes:['Weather can cancel or shorten rides. Choose a free-cancellation booking, or confirm the day before.','Dress in thermal layers, gloves, a beanie and waterproof boots. It is colder on a horse than walking.','Dropped from this plan because they need a car: Derinkuyu, Ihlara Valley, Paşabağ and Devrent.']
+},
+{id:'d3',date:'Wed 10 Feb 2027',short:'Wed 10 Feb',title:'Bus from Göreme to Konya',city:'Konya',scene:'d3',imsak:'≈ 6:10 am (Göreme)',iftar:'≈ 6:25 pm (Konya)',
+ sum:'A direct bus takes you from Cappadocia to the city of Rumi. Settle in near the Mevlana complex, see Alaaddin Hill, and share iftar and tarawih in one of Turkey\'s most devout cities.',
+ transit:[
+  {mode:'🚌 Intercity bus',title:'Göreme bus station → Konya bus station',text:'Direct buses (Kamil Koç, Metro Turizm, FlixBus) take roughly 3 hours 20 to 3 hours 40 and cost around €12 pp. Buses run frequently through the day. Book online on Obilet or FlixBus, or through your hotel, and aim for a departure around 9 am.',dir:['Göreme Bus Station','Konya Otogar','transit']},
+  {mode:'🚋 Tram',title:'Konya bus station → city centre',text:'The bus station is about 7–11 km north of the centre. Take the tram from the bus-station stop toward Alaaddin (about 30–45 minutes), and get off at Alaaddin Hill.',
+    alt:'Faster option: a dolmuş from outside the bus station is roughly half the tram time and costs about the same. A taxi is another fallback for four people with bags.',dir:['Konya Otogar','Alaaddin Hill Konya','transit']},
+  {mode:'🚶 On foot',title:'Alaaddin Hill → Mevlana complex',text:'Walk along Mevlana Caddesi, or hop on a dolmuş running along it. Stay in a hotel near the Mevlana area so everything else is walkable.',dir:['Alaaddin Hill Konya','Mevlana Museum Konya','walking']}
+ ],
+ hl:[
+  {time:'Afternoon',title:'Alaaddin Hill and its mosque',text:'The Seljuk-era hilltop park at the heart of the old city. A calm first walk after the bus.',icon:'🕌',photo:'Alaaddin Hill Konya mosque',map:'Alaaddin Hill Konya'},
+  {time:'Late afternoon',title:'Selimiye Mosque and Mevlana Caddesi',text:'The Ottoman Selimiye Mosque stands beside the Mevlana complex. Watch the neighbourhood fill up before iftar.',icon:'🌙',photo:'Selimiye Mosque Konya',map:'Selimiye Mosque Konya'},
+  {time:'Evening',title:'Mevlana complex, lit up',text:'The turquoise fluted dome glows after dusk. The museum interior is easier on a fresh morning, so save it for tomorrow.',icon:'🔷',photo:'Mevlana Museum Konya night dome',map:'Mevlana Museum Konya'},
+  {time:'After iftar',title:'Tarawih at Selimiye Mosque',text:'Join the community prayer next to the mausoleum. Check whether a Sema (whirling ceremony) is scheduled; performances are not guaranteed during Ramadan.',icon:'🤲',photo:'Selimiye Mosque Konya Ramadan',map:'Selimiye Mosque Konya'}
+ ],
+ iftar:FOOD.konya,sahur:FOOD.konyaSahur,sahurFor:'tomorrow\'s sahur',
+ notes:['Konya is conservative and strongly Ramadan-focused. Many cafés and restaurants stay closed until close to iftar, so buy daytime supplies in advance if you need them.','The last bus back toward Göreme historically left around 5 pm, but you are not returning, so this only matters if plans change.','Keep your bags at the hotel and travel light between the bus station and the centre.']
+},
+{id:'d4',date:'Thu 11 Feb 2027',short:'Thu 11 Feb',title:'Mevlana, then high-speed rail to Istanbul',city:'Konya → Istanbul (Kadıköy)',scene:'d4',imsak:'≈ 6:15 am (Konya)',iftar:'≈ 6:35 pm (Istanbul)',
+ sum:'Visit Rumi\'s mausoleum in the morning, then ride the high-speed train to Istanbul. Break your fast on the Asian side in Kadıköy, your base for the last four nights.',
+ transit:[
+  {mode:'🚌 City bus / tram',title:'Hotel → Konya station',text:'Trains depart from Konya Station (main station, about 3 km west of Alaaddin Hill; city bus 38 from the centre, or a short taxi) and also stop at Selçuklu YHT Station, which has a tram stop about 500 m away. Check which station your ticket uses.'},
+  {mode:'🚆 High-speed train (YHT)',title:'Konya → Istanbul (Pendik / Söğütlüçeşme)',text:'A past timetable listed departures around 06:00, 08:45, 12:25 and 18:40, about 4 hours 45 minutes to 5 hours. The 12:25 reaches Pendik about 16:45 and Söğütlüçeşme about 17:20, leaving time for the museum. Buy on TCDD or EBilet in advance, and carry your passports.',dir:['Konya Train Station','Söğütlüçeşme Station Istanbul','transit']},
+  {mode:'🚇 Marmaray + M4',title:'Into Kadıköy',text:'If you get off at Pendik: take Marmaray toward Halkalı to Ayrılık Çeşmesi, then M4 toward Kadıköy. Allow about 1 hour in all. Buy an Istanbulkart at a ticket machine (biletmatik); one card can pay for several people.',
+    alt:'If your train stops at Söğütlüçeşme, you are already in the Kadıköy area. Take a short taxi or dolmuş to your apartment, or walk about 20 minutes.',dir:['Pendik Station Istanbul','Kadıköy Istanbul','transit']}
+ ],
+ hl:[
+  {time:'Morning',title:'Mevlana Museum',text:'The mausoleum of Rumi, under the turquoise dome, is the spiritual heart of Konya. Check Ramadan opening hours, and dress modestly.',icon:'🔷',photo:'Mevlana Museum Konya interior tomb Rumi',map:'Mevlana Museum Konya',tip:'Visit as soon as it opens to have space and quiet.'},
+  {time:'Midday',title:'The train ride across Anatolia',text:'About 5 hours through Eskişehir toward the Marmara coast. Bring sahur leftovers, water and a charger.',icon:'🚆',photo:'Turkish high speed train YHT Konya Istanbul',map:'Konya Train Station'},
+  {time:'Around iftar',title:'Kadıköy Pier and Moda seafront',text:'After you check in and break your fast, take an evening stroll by the water. It is a gentle first taste of Istanbul.',icon:'⛴️',photo:'Kadıköy pier Istanbul evening',map:'Kadıköy Pier Istanbul',tip:'Keep dates and water in your bag in case iftar arrives while you are still in transit.'}
+ ],
+ iftar:FOOD.kadikoy,sahur:FOOD.istanbulSahur,sahurFor:'tomorrow\'s sahur',
+ notes:['Timetables above come from a past schedule. Confirm the current February times before booking.','If your train is late, break your fast with dates and water on board.','Buy sahur groceries on the way from the station, before shops close.']
+},
+{id:'d5',date:'Fri 12 Feb 2027',short:'Fri 12 Feb',title:'Sultanahmet: Hagia Sophia, Blue Mosque, cistern and Topkapı',city:'Istanbul (Sultanahmet)',scene:'d5',imsak:'≈ 6:30 am',iftar:'≈ 6:35 pm',
+ sum:'The old city\'s big four, ordered around Friday prayers. Do the mosques and the cistern before noon, then Topkapı Palace in the afternoon, with iftar in the historic quarter.',
+ transit:[
+  {mode:'⛴️ Ferry',title:'Kadıköy → Eminönü',text:'Take the Şehir Hatları public ferry from Kadıköy pier, about 20 minutes, and pay with your Istanbulkart.',dir:['Kadıköy Pier','Eminönü Pier Istanbul','transit']},
+  {mode:'🚋 Tram T1',title:'Eminönü → Sultanahmet',text:'Take the T1 tram (Bağcılar–Kabataş) three stops to Sultanahmet, or walk about 15 minutes uphill. Everything is then within about 10 minutes\' walk.'},
+  {mode:'🚇 Return',title:'Sultanahmet → Kadıköy',text:'Take T1 to Eminönü and the ferry back. Check the last ferry times.',alt:'Late-night fallback: T1 to Sirkeci, Marmaray to Ayrılık Çeşmesi, then M4 to Kadıköy.'}
+ ],
+ hl:[
+  {time:'Morning',title:'Hagia Sophia',text:'A 6th-century domed church that is now a working mosque. The ground floor is the prayer hall. Foreign visitors sightsee from the upper level with a ticket of about €25. Confirm the current rules on the official ticket site.',icon:'🕌',photo:'Hagia Sophia Istanbul interior dome',map:'Hagia Sophia Istanbul'},
+  {time:'Morning',title:'Blue Mosque (Sultanahmet Mosque)',text:'Six minarets and thousands of blue İznik tiles. Free to enter outside prayer times.',icon:'🔵',photo:'Blue Mosque Sultanahmet Istanbul interior',map:'Sultan Ahmed Mosque Istanbul'},
+  {time:'Before Friday prayer',title:'Basilica Cistern',text:'A cool underground Byzantine reservoir, lit softly among 336 columns. Book a timed ticket if possible.',icon:'🏛️',photo:'Basilica Cistern Istanbul',map:'Basilica Cistern Istanbul'},
+  {time:'After Friday prayer',title:'Topkapı Palace and Harem',text:'The Ottoman sultans\' palace, with courtyards, treasury and Bosphorus terraces. The Harem needs a separate ticket.',icon:'👑',photo:'Topkapı Palace Istanbul courtyard',map:'Topkapı Palace Istanbul',tip:'If you are flagging, skip the Harem and enjoy the courtyards and terrace.'},
+  {time:'Evening',title:'Sultanahmet at iftar',text:'The square fills with families for iftar, and the mosques glow after dusk. Stay for tarawih if you wish.',icon:'🌙',photo:'Sultanahmet Square Ramadan iftar Istanbul',map:'Sultanahmet Square Istanbul'}
+ ],
+ iftar:FOOD.sultanahmet,sahur:FOOD.istanbulSahur,sahurFor:'tomorrow\'s sahur',
+ notes:['Friday midday prayer roughly 12:30–14:00: mosques limit visitors. Do Hagia Sophia and the Blue Mosque first, or pray Jumu\'ah there.','Dress modestly: covered shoulders and knees, and a headscarf for women in mosques. Shoes come off.','It is a long walking day while fasting. Take the cistern and palace at your own pace and rest in Gülhane Park.']
+},
+{id:'d6',date:'Sat 13 Feb 2027',short:'Sat 13 Feb',title:'Golden Horn: Balat, Eyüp and Süleymaniye',city:'Istanbul (Golden Horn)',scene:'d6',imsak:'≈ 6:30 am',iftar:'≈ 6:35 pm',
+ sum:'A quieter day along the Golden Horn: colourful Balat, the pilgrimage mosque of Eyüp, a hilltop view, and Sinan\'s Süleymaniye. Cross Galata Bridge at dusk and ferry home for iftar. No bazaars.',
+ transit:[
+  {mode:'⛴️ Ferry',title:'Kadıköy → Eminönü',text:'The public ferry takes about 20 minutes.',dir:['Kadıköy Pier','Eminönü Pier Istanbul','transit']},
+  {mode:'🚋 Tram T5',title:'Eminönü → Fener / Balat → Eyüp',text:'The T5 tram runs along the Golden Horn to Fener, Balat, Ayvansaray and Eyüp Sultan. Hop off at Fener or Balat first, then continue to Eyüp. Confirm the line on your Istanbul transit app.',
+    alt:'If T5 is disrupted, take a city bus from Eminönü toward Eyüp, or a taxi shared four ways.'},
+  {mode:'🚡 Cable car',title:'Eyüp → Pierre Loti Hill',text:'A short cable car climbs to the hilltop café and viewpoint. It can close in bad weather, so check first. Walk down through the old cemetery if you prefer.'},
+  {mode:'🚋 Tram + walk',title:'Eyüp → Süleymaniye',text:'Take T5 back toward Eminönü, then walk about 15–20 minutes uphill to Süleymaniye.'},
+  {mode:'⛴️ Ferry',title:'Galata Bridge → Karaköy → Kadıköy',text:'Walk across Galata Bridge at dusk to Karaköy pier, then take the Karaköy–Kadıköy ferry home.'}
+ ],
+ hl:[
+  {time:'Morning',title:'Fener and Balat',text:'Steep lanes lined with painted houses, old churches and small cafés. Walk, look and photograph.',icon:'🎨',photo:'Balat Istanbul colourful houses',map:'Balat Istanbul'},
+  {time:'Late morning',title:'Eyüp Sultan Mosque',text:'One of Islam\'s most visited sites in Turkey, beside the tomb of Abu Ayyub al-Ansari, a companion of the Prophet. Especially moving during Ramadan.',icon:'🕋',photo:'Eyüp Sultan Mosque Istanbul',map:'Eyüp Sultan Mosque',tip:'Dress modestly and keep your voice low. It is an active place of pilgrimage.'},
+  {time:'Midday',title:'Pierre Loti Hill',text:'Views over the Golden Horn from the hilltop café. Have tea if you are not fasting, or simply enjoy the view.',icon:'🚡',photo:'Pierre Loti Hill Istanbul Golden Horn view',map:'Pierre Loti Hill Istanbul'},
+  {time:'Afternoon',title:'Süleymaniye Mosque',text:'Sinan\'s great mosque above the Golden Horn, with the tombs of Süleyman and Sinan and a terrace with broad views. Free to visit outside prayer times.',icon:'🕌',photo:'Süleymaniye Mosque Istanbul',map:'Süleymaniye Mosque Istanbul'},
+  {time:'Dusk',title:'Galata Bridge at sunset',text:'Fishermen line the rails while the skyline lights up. Galata Tower looks great from below, so skip the paid climb.',icon:'🌉',photo:'Galata Bridge sunset Istanbul',map:'Galata Bridge Istanbul'}
+ ],
+ iftar:FOOD.kadikoy,sahur:FOOD.istanbulSahur,sahurFor:'tomorrow\'s sahur before your flight',
+ notes:['Eyüp is very busy near iftar. Aim to finish there by mid-afternoon.','Ferries are lovely but can be rough and cold. Keep your jacket on and a hood or scarf handy.','Shopping is deliberately left out. The Grand Bazaar and Spice Bazaar are not in this plan.']
+},
+{id:'d7',date:'Sun 14 Feb 2027',short:'Sun 14 Feb',title:'Sahur, metro to SAW and fly home',city:'Kadıköy → SAW',scene:'d7',imsak:'≈ 6:25 am',iftar:'≈ 6:35 pm',
+ sum:'Sahur, tidy up and take the M4 metro straight to the airport. You have time for a slow morning only if your flight is late.',
+ transit:[
+  {mode:'🚇 Metro M4',title:'Kadıköy → Sabiha Gökçen Airport',text:'M4 runs directly from Kadıköy to SAW in about 52 minutes, with trains every 5–6 minutes. It normally runs 06:00 to midnight and continuously at weekends. Leave about 4½ hours before your flight to allow for the ride, check-in and security.',dir:['Kadıköy Metro Station Istanbul','Sabiha Gökçen Airport','transit'],
+    alt:'Backups: the Havabus SG-1 to and from Kadıköy (about 50 minutes, roughly hourly, longer in traffic) or a taxi (about 30–45 minutes; agree the fare or use the meter).'}
+ ],
+ hl:[
+  {time:'Before dawn',title:'Sahur at the apartment',text:'Eat well and pack the last things. Check that passports, chargers and the Istanbulkart are in your bag.',icon:'🥣',photo:'Turkish sahur breakfast menemen',map:'Kadıköy Istanbul'},
+  {time:'If your flight is late',title:'Moda seafront morning walk',text:'A gentle stroll by the water, ending at Kadıköy pier. Keep it short and leave time for the metro.',icon:'🌊',photo:'Moda seafront Kadıköy Istanbul',map:'Moda Sahil Kadıköy'},
+  {time:'Departure',title:'Fly SAW → Kuala Lumpur',text:'Sabiha Gökçen is where you land and fly out. Some airlines can serve iftar or sahur meals on request. Ask when checking in or booking.',icon:'✈️',photo:'Sabiha Gökçen Airport Istanbul',map:'Sabiha Gökçen Airport'}
+ ],
+ iftar:FOOD.kadikoy,sahur:FOOD.istanbulSahur,sahurFor:'this morning',iftarLabel:'Iftar in Istanbul or on the plane',
+ notes:['Leave earlier if you have checked baggage or an evening international rush.','If your flight crosses sunset, pack dates and water and ask the crew about iftar meals.','Turn in the last Istanbulkart balance or keep it for a future trip.']
+}
+];
+
+var BOOK=['SAW → Kayseri/Nevşehir flight (one-way; check baggage rules)','Airport shuttle to Göreme (share your flight number)','Göreme cave hotel, 2 nights (ask about a sahur tray)','Sunset horse ride (free cancellation; confirm once the forecast is clear)','Göreme → Konya bus (Obilet or FlixBus, around 9 am)','Konya hotel near Mevlana, 1 night','Konya → Istanbul high-speed train (TCDD or EBilet; passports)','Kadıköy apartment, 3 nights','Istanbulkart (one card can pay for several people)','eSIM or roaming plan'];
+var PACK=['Thermal base layers','Warm waterproof jacket','Waterproof boots with good grip','Gloves, beanie and scarf','Compact umbrella','Lip balm and moisturiser','Modest clothing for mosques (headscarf for women)','Small travel prayer mat','Dates and a water bottle','Power bank','Plug adapter (Turkey uses Type C/F, Malaysia uses Type G)','Passport copies'];
+
+var BUDGET=[
+ ['KUL ⇄ SAW flight (your quote)','1,953','1,953'],
+ ['SAW → Cappadocia, one-way (your RM289 is a round trip)','150','200'],
+ ['Airport shuttle to Göreme','45','60'],
+ ['Göreme cave hotel, 2 nights (shared)','150','300'],
+ ['Göreme Open-Air Museum and Uçhisar entry','60','100'],
+ ['Sunset horse ride (2 hours)','140','210'],
+ ['Bus Göreme → Konya','45','70'],
+ ['Konya hotel, 1 night, plus local tram or dolmuş','70','120'],
+ ['Train Konya → Istanbul','60','110'],
+ ['Kadıköy apartment, 3 nights (shared)','190','300'],
+ ['Food (fasting: sahur plus iftar)','250','400'],
+ ['Istanbul transport (Istanbulkart, ferries, metro)','60','100'],
+ ['Topkapı with Harem, Basilica Cistern','340','390'],
+ ['eSIM','30','50'],
+ ['Spare money and small extras','150','150']
+];
+
+/* ---------- rendering ---------- */
+var view=document.getElementById('view');
+var tablist=document.getElementById('tablist');
+var TABS=[{id:'plan',label:'Plan',sub:'Route'}].concat(D.map(function(d,i){return {id:d.id,label:'Day '+(i+1),sub:d.short};})).concat([{id:'tips',label:'Budget',sub:'Tips'}]);
+var seen=store.get('seenDays',{});
+
+function renderTabs(active){
+  tablist.innerHTML=TABS.map(function(t){
+    var sel=t.id===active;
+    return '<button class="tab'+(seen[t.id]&&!sel?' done':'')+'" role="tab" id="tab-'+t.id+'" aria-selected="'+sel+'" aria-controls="view" tabindex="'+(sel?0:-1)+'" data-id="'+t.id+'">'+esc(t.label)+'<small>'+esc(t.sub)+'</small></button>';
+  }).join('');
+}
+
+var PAL=[['#0B7A85','#2A2A5C'],['#B8801A','#A63A5A'],['#2A2A5C','#0B7A85'],['#A63A5A','#2A2A5C'],['#3E7F5C','#0B7A85']];
+var TYPE_LABEL={budget:'Budget',sitdown:'Sit-down',splurge:'Splurge',free:'Free / community',hotel:'Hotel',selfcater:'Self-catered',eatout:'Eat out'};
+
+function foodCards(list){
+  return list.map(function(f){
+    return '<article class="food" data-type="'+esc(f.type)+'"><div class="ftop"><h4>'+esc(f.name)+'</h4><span class="band">'+esc(TYPE_LABEL[f.type]||f.type)+'</span></div>'+
+    '<p class="area">'+esc(f.area)+'</p><p>'+esc(f.what)+'</p>'+
+    '<div class="meta"><span>Halal meat</span>'+(f.alc?'<span class="alc">Serves alcohol</span>':'')+'<span class="pr">'+esc(f.price)+'</span></div>'+
+    (f.note?'<p class="fnote">'+esc(f.note)+'</p>':'')+
+    '<a class="lnk" href="'+mapUrl(f.mapQ)+'"'+ext+'>Open in Maps</a></article>';
+  }).join('');
+}
+function filterBar(list,id){
+  var types=[]; list.forEach(function(f){if(types.indexOf(f.type)<0)types.push(f.type);});
+  var out='<div class="filters ui" data-group="'+id+'" role="group" aria-label="Filter options"><button class="fchip" aria-pressed="true" data-t="all">All</button>';
+  types.forEach(function(t){out+='<button class="fchip" aria-pressed="false" data-t="'+t+'">'+esc(TYPE_LABEL[t]||t)+'</button>';});
+  return out+'</div>';
+}
+
+function stepsHtml(list){
+  return '<ol class="steps">'+list.map(function(t,i){
+    return '<li data-n="'+(i+1)+'"><div class="mode">'+esc(t.mode)+'</div><h4>'+esc(t.title)+'</h4><p>'+esc(t.text)+'</p>'+
+    (t.alt?'<details class="alt"><summary>Backup or extra detail</summary><p>'+esc(t.alt)+'</p></details>':'')+
+    (t.dir?'<a class="lnk" href="'+dirUrl(t.dir[0],t.dir[1]).replace('travelmode=transit','travelmode='+(t.dir[2]==='walking'?'walking':'transit'))+'"'+ext+'>Open route in Maps</a>':'')+'</li>';
+  }).join('')+'</ol>';
+}
+function hlHtml(list){
+  return '<div class="grid">'+list.map(function(h,i){
+    var p=PAL[i%PAL.length];
+    return '<article class="hl"><div class="art" style="--a:'+p[0]+';--b:'+p[1]+'" aria-hidden="true">'+h.icon+'</div><div class="hl-body"><p class="time">'+esc(h.time)+'</p><h4>'+esc(h.title)+'</h4><p>'+esc(h.text)+'</p>'+
+    (h.tip?'<p class="tip">'+esc(h.tip)+'</p>':'')+
+    '<div class="links"><a href="'+imgUrl(h.photo)+'"'+ext+'>See photos</a><a href="'+mapUrl(h.map)+'"'+ext+'>Map</a></div></div></article>';
+  }).join('')+'</div>';
+}
+
+function dayView(i){
+  var d=D[i],prev=D[i-1],next=D[i+1];
+  var h='<div class="scene">'+scene(d.scene)+'</div>'+
+  '<div class="dayhead"><p class="when">'+esc(d.date)+' · '+esc(d.city)+'</p><h1>'+esc(d.title)+'</h1><p class="sum">'+esc(d.sum)+'</p>'+
+  '<div class="fast"><span>Sahur ends '+esc(d.imsak)+'</span><div class="bar" aria-hidden="true"></div><span>Iftar '+esc(d.iftar)+'</span></div></div>';
+  h+='<h2>Getting around today</h2>'+stepsHtml(d.transit);
+  h+='<h2>Highlights</h2><p class="legend ui">Illustrations are drawn scenes. Tap "See photos" for real pictures of each place.</p>'+hlHtml(d.hl);
+  h+='<h2>'+esc(d.iftarLabel||'Iftar options')+'</h2>'+filterBar(d.iftar,'iftar')+'<div class="grid" data-list="iftar">'+foodCards(d.iftar)+'</div>';
+  h+='<h2>Sahur options for '+esc(d.sahurFor)+'</h2>'+filterBar(d.sahur,'sahur')+'<div class="grid" data-list="sahur">'+foodCards(d.sahur)+'</div>';
+  h+='<p class="legend ui" style="margin-top:12px">Meat in Turkey is halal by default. A red badge marks places known to serve alcohol. Prices use about 12 TL = RM1 and are estimates.</p>';
+  h+='<h2>Good to know</h2><div class="notes"><ul>'+d.notes.map(function(n){return '<li>'+esc(n)+'</li>';}).join('')+'</ul></div>';
+  h+='<div class="daynav ui">'+(prev?'<button class="btn" data-go="'+prev.id+'">← '+esc(prev.short)+'</button>':'<button class="btn" data-go="plan">← Plan</button>')+(next?'<button class="btn fill" data-go="'+next.id+'">'+esc(next.short)+' →</button>':'<button class="btn fill" data-go="tips">Budget and tips →</button>')+'</div>';
+  return h;
+}
+
+function planView(){
+  var h='<h2 style="margin-top:6px">The route</h2><p class="ui" style="color:var(--muted);max-width:60ch">Tap a place to jump to that day. Every leg is by plane, bus, train, tram, ferry or metro.</p>';
+  var stops=[
+   ['Sabiha Gökçen (SAW)','Land Mon 8 Feb','d1','Flight to Cappadocia, about 1½ hours'],
+   ['Göreme, Cappadocia','Days 1–2 · 2 nights','d1','Direct bus, about 3½ hours'],
+   ['Konya','Day 3 · 1 night','d3','High-speed train, about 5 hours'],
+   ['Istanbul (Kadıköy base)','Days 4–7 · 3 nights','d4','M4 metro, about 52 minutes'],
+   ['Sabiha Gökçen (SAW)','Fly home Sun 14 Feb','d7','']
+  ];
+  h+='<ul class="route">'+stops.map(function(s){
+    return '<li class="stop"><div class="dot"><i></i><b></b></div><div><button data-go="'+s[2]+'"><h3>'+esc(s[0])+'</h3><span class="sub">'+esc(s[1])+'</span></button>'+(s[3]?'<div class="leg">'+esc(s[3])+'</div>':'')+'</div></li>';
+  }).join('')+'</ul>';
+  h+='<h2>Day by day</h2><div class="glance">'+D.map(function(d,i){
+    return '<button class="gcard" data-go="'+d.id+'"><div class="d">Day '+(i+1)+' · '+esc(d.short)+'</div><h4>'+esc(d.title)+'</h4><div class="d">'+esc(d.city)+'</div><div class="f">Sahur '+esc(d.imsak)+' · Iftar '+esc(d.iftar)+'</div></button>';
+  }).join('')+'</div>';
+  h+='<h2>Book first</h2><p class="legend ui">Tick items off as you book them. Your ticks are saved in this browser only.</p>'+checklist('book',BOOK);
+  h+='<h2>How to read this guide</h2><div class="notes"><ul><li>Fasting times are estimates from sun position for each city. Confirm with Diyanet or your prayer app.</li><li>Every day lists iftar options and sahur options, with a halal note on each.</li><li>Shopping stops are left out on purpose, including the Grand Bazaar and Spice Bazaar.</li><li>This is a draft. Tell me what to change: pace, budget, restaurants or days.</li></ul></div>';
+  return h;
+}
+
+function checklist(key,items){
+  var st=store.get('chk-'+key,{});
+  return '<ul class="check ui" data-key="'+key+'">'+items.map(function(t,i){
+    return '<li><label><input type="checkbox" data-i="'+i+'"'+(st[i]?' checked':'')+'><span>'+esc(t)+'</span></label></li>';
+  }).join('')+'</ul>';
+}
+
+function tipsView(){
+  var lo=0,hi=0;
+  BUDGET.forEach(function(r){lo+=parseInt(r[1].replace(/,/g,''),10);hi+=parseInt(r[2].replace(/,/g,''),10);});
+  var fmt=function(n){return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g,',');};
+  var h='<h2 style="margin-top:6px">Estimated cost per person (RM)</h2>';
+  h+='<div class="tw"><table class="ui"><thead><tr><th>Item</th><th class="n">Low</th><th class="n">High</th></tr></thead><tbody>'+
+   BUDGET.map(function(r){return '<tr><td>'+esc(r[0])+'</td><td class="n">'+r[1]+'</td><td class="n">'+r[2]+'</td></tr>';}).join('')+
+   '<tr class="total"><td>Total per person</td><td class="n">'+fmt(lo)+'</td><td class="n">'+fmt(hi)+'</td></tr>'+
+   '<tr class="total"><td>Group of 4</td><td class="n">'+fmt(lo*4)+'</td><td class="n">'+fmt(hi*4)+'</td></tr></tbody></table></div>';
+  h+='<p class="legend ui" style="margin-top:10px">Everything except the KUL flight is an estimate. Converted at about 12 TL = RM1 and €1 = RM4.7. Lira prices may rise 10–20% by February. There is no balloon flight, no car rental and no shopping in this total. The optional Hagia Sophia upper-level ticket is about €25 (≈ RM105) on top.</p>';
+  h+='<h2>Weather in February</h2><div class="cards2">'+
+   '<div class="card"><h4>Göreme</h4><p>Roughly −5 to 6 °C. Snow and ice are common. Coldest at dawn.</p></div>'+
+   '<div class="card"><h4>Konya</h4><p>Roughly −4 to 6 °C. Cold and dry, with chilly evenings.</p></div>'+
+   '<div class="card"><h4>Istanbul</h4><p>Roughly 3 to 10 °C. Rain about half the days, and a cold wind off the water.</p></div></div>';
+  h+='<h2>Packing</h2>'+checklist('pack',PACK);
+  h+='<h2>Getting around Istanbul</h2><div class="notes"><ul><li>An Istanbulkart pays for metro, Marmaray, trams, buses and ferries. One card can pay for several people.</li><li>M4 metro links Kadıköy and SAW in about 52 minutes and connects to Marmaray at Ayrılık Çeşmesi.</li><li>Ferries from Kadıköy to Eminönü and Karaköy are the scenic, cheap way across.</li></ul></div>';
+  h+='<h2>Ramadan tips</h2><div class="notes"><ul><li>Arrive at restaurants 30–45 minutes before iftar. Popular places fill quickly.</li><li>Carry dates and water in case iftar arrives while you travel.</li><li>Konya is very devout, so expect quiet days and busy evenings.</li><li>Fasting is easier in the cold, but the long walking days add up. Do the heaviest walking in the morning.</li></ul></div>';
+  h+='<h2>What this plan leaves out</h2><div class="notes"><ul><li>Shopping: the Grand Bazaar, Spice Bazaar and shopping streets.</li><li>Car-only sights: Derinkuyu, Ihlara Valley, Sultanhanı Caravanserai, Paşabağ and Devrent.</li><li>A balloon flight. Watching from the ground is free.</li></ul></div>';
+  return h;
+}
+
+/* ---------- navigation ---------- */
+function currentId(){var h=(location.hash||'').replace('#','');return TABS.some(function(t){return t.id===h;})?h:(store.get('lastView','plan'));}
+function show(id,noScroll){
+  if(!TABS.some(function(t){return t.id===id;}))id='plan';
+  var idx=D.findIndex(function(d){return d.id===id;});
+  view.innerHTML=id==='plan'?planView():(id==='tips'?tipsView():dayView(idx));
+  if(id!=='plan'&&id!=='tips'){seen[id]=true;store.set('seenDays',seen);}
+  store.set('lastView',id);
+  renderTabs(id);
+  var t=document.getElementById('tab-'+id);
+  if(t&&t.scrollIntoView){try{t.scrollIntoView({inline:'center',block:'nearest'});}catch(e){}}
+  view.setAttribute('aria-labelledby','tab-'+id);
+  if(!noScroll)window.scrollTo(0,0);
+  if(location.hash!=='#'+id){try{history.replaceState(null,'','#'+id);}catch(e){}}
+}
+document.addEventListener('click',function(e){
+  var go=e.target.closest('[data-go]');
+  if(go){show(go.getAttribute('data-go'));return;}
+  var tab=e.target.closest('.tab');
+  if(tab){show(tab.getAttribute('data-id'));return;}
+  var fc=e.target.closest('.fchip');
+  if(fc){
+    var bar=fc.parentNode,g=bar.getAttribute('data-group'),t=fc.getAttribute('data-t');
+    bar.querySelectorAll('.fchip').forEach(function(b){b.setAttribute('aria-pressed',b===fc?'true':'false');});
+    var list=view.querySelector('[data-list="'+g+'"]');
+    if(list)list.querySelectorAll('.food').forEach(function(c){c.hidden=(t!=='all'&&c.getAttribute('data-type')!==t);});
+  }
+});
+document.addEventListener('change',function(e){
+  var cb=e.target;
+  if(cb&&cb.type==='checkbox'){
+    var ul=cb.closest('.check');if(!ul)return;
+    var key='chk-'+ul.getAttribute('data-key');var st=store.get(key,{});
+    st[cb.getAttribute('data-i')]=cb.checked;store.set(key,st);
+  }
+});
+tablist.addEventListener('keydown',function(e){
+  if(e.key!=='ArrowRight'&&e.key!=='ArrowLeft')return;
+  var ids=TABS.map(function(t){return t.id;});
+  var cur=ids.indexOf(currentId());
+  var n=e.key==='ArrowRight'?Math.min(ids.length-1,cur+1):Math.max(0,cur-1);
+  show(ids[n],true);
+  var el=document.getElementById('tab-'+ids[n]);if(el)el.focus();
+  e.preventDefault();
+});
+window.addEventListener('hashchange',function(){show(currentId(),false);});
+show(currentId(),true);
+})();
+</script>
+</body>
+</html>
