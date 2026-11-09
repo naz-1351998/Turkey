@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0B7A85">
 <meta name="color-scheme" content="light dark">
-<title>Cappadocia to Istanbul · Ramadan trip, 8–14 Feb 2027</title>
+<title>Cappadocia, Erciyes and Pamukkale · Ramadan trip, 9–16 Feb 2027</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet">
@@ -196,11 +196,11 @@ footer{color:var(--muted);font-size:.95rem;padding:20px 0 40px;border-top:1px so
 <body>
 <div class="tile-band" aria-hidden="true"></div>
 <header class="wrap mast">
-  <h1>From Cappadocia to Istanbul</h1>
-  <p class="ui">A seven-day Ramadan route for four, by public transport only. Land and fly out of Sabiha Gökçen (SAW).</p>
+  <h1>Cappadocia, Erciyes and Pamukkale</h1>
+  <p class="ui">An eight-day Ramadan route for three, by public transport only. Land and fly out of Sabiha Gökçen (SAW), with Istanbul at both ends.</p>
   <div class="chips ui" aria-label="Trip facts">
-    <span class="chip">8–14 Feb 2027</span>
-    <span class="chip">Group of 4</span>
+    <span class="chip">9–16 Feb 2027</span>
+    <span class="chip">Group of 3</span>
     <span class="chip">Fasting: iftar and sahur planned daily</span>
     <span class="chip">No shopping stops</span>
     <span class="chip">Draft for review</span>
@@ -247,6 +247,18 @@ function stars(list){return list.map(function(p){return '<circle cx="'+p[0]+'" c
 function plane(x,y,s,c){return '<g transform="translate('+x+','+y+') scale('+s+')"><path d="M0 12 L46 6 L62 -8 L70 -6 L62 8 L92 10 L94 14 L62 16 L72 32 L64 34 L46 18 L0 18Z" fill="'+c+'"/></g>';}
 function scene(k){
   var G='#171A33';
+  if(k==='erciyes')return svgWrap('#8DB6DF','#EAF3FA','Snow-covered Mount Erciyes with a gondola',
+    '<circle cx="140" cy="62" r="26" fill="#FFF3C7"/>'+
+    '<path d="M-20 220 L260 92 L330 122 L520 30 L820 220Z" fill="#F6FAFD"/>'+
+    '<path d="M520 30 L580 104 L522 92 L480 134Z" fill="#C9DCEC"/><path d="M260 92 L304 146 L250 134Z" fill="#C9DCEC"/>'+
+    '<path d="M60 216 L470 86" stroke="#2B3A55" stroke-width="2"/><rect x="262" y="148" width="28" height="18" rx="3" fill="#D9534F"/><path d="M276 134 L276 148" stroke="#2B3A55" stroke-width="2"/>'+
+    '<path d="M40 220 L56 186 L72 220Z M90 220 L108 178 L126 220Z M690 220 L706 184 L722 220Z M735 220 L753 176 L771 220Z" fill="#1F3B3A"/>');
+  if(k==='pamukkale')return svgWrap('#7FB4E3','#FBE7C4','White travertine terraces with turquoise pools at Pamukkale',
+    '<circle cx="660" cy="62" r="28" fill="#FFE9A8"/>'+
+    '<path d="M0 220 V122 Q120 96 240 118 T480 112 T800 92 V220Z" fill="#F4F7F9"/>'+
+    '<ellipse cx="140" cy="150" rx="74" ry="14" fill="#52C6D6" stroke="#fff" stroke-width="4"/><ellipse cx="320" cy="140" rx="80" ry="15" fill="#52C6D6" stroke="#fff" stroke-width="4"/><ellipse cx="520" cy="134" rx="78" ry="14" fill="#52C6D6" stroke="#fff" stroke-width="4"/><ellipse cx="700" cy="124" rx="70" ry="13" fill="#52C6D6" stroke="#fff" stroke-width="4"/>'+
+    '<path d="M0 206 Q200 188 400 204 T800 194 V220 H0Z" fill="#E8EEF2"/>'+
+    '<ellipse cx="90" cy="190" rx="90" ry="16" fill="#52C6D6" stroke="#fff" stroke-width="4"/><ellipse cx="270" cy="186" rx="96" ry="17" fill="#52C6D6" stroke="#fff" stroke-width="4"/><ellipse cx="470" cy="180" rx="100" ry="17" fill="#52C6D6" stroke="#fff" stroke-width="4"/><ellipse cx="670" cy="172" rx="88" ry="15" fill="#52C6D6" stroke="#fff" stroke-width="4"/>');
   if(k==='d1')return svgWrap('#243A6B','#F2A65A','Cappadocia fairy chimneys at sunset with a plane overhead',
     '<circle cx="560" cy="160" r="36" fill="#FFD68A"/>'+plane(90,44,0.9,'#fff')+
     chim(40,90,80,G)+chim(150,60,110,G)+chim(230,110,70,G)+chim(380,70,120,G)+chim(470,100,90,G)+chim(640,80,130,G)+chim(730,70,75,G)+'<rect y="205" width="800" height="15" fill="'+G+'"/>');
@@ -328,8 +340,34 @@ FOOD.istanbulSahur=[
  {name:'Late-night restaurants with a sahur menu',area:'Kadıköy and Beyoğlu',type:'eatout',what:'Some restaurants stay open until dawn in Ramadan. Search Maps for "sahur" near your apartment and confirm that night\'s hours before you go out.',price:'Varies',mapQ:'sahur Kadıköy'}
 ];
 
+FOOD.kayseri=[
+ {name:'Elmacıoğlu İskender (Çarşı branch)',area:'5 Millet Cd., near the castle and old town',type:'sitdown',what:'Known for İskender kebab. The menu also has Kayseri classics: mantı, yağlama, yaprak sarma and pastırma in paper.',price:'≈ RM35–60 pp',mapQ:'Elmacıoğlu İskender Çarşı Kayseri',note:'Close to Cumhuriyet Square, so easy before your night bus.'},
+ {name:'Kaşık-La',area:'Alparslan area, Kayseri',type:'sitdown',what:'Traditional Kayseri dishes with a modern look: mantı, pastırma in paper and Nevzine dessert.',price:'≈ RM35–60 pp',mapQ:'Kaşık-La Kayseri'},
+ {name:'Sultan Sofrası',area:'Park Bulvarı, Camikebir',type:'sitdown',what:'Known for tiny Kayseri mantı in a tomato broth, plus yağlama.',price:'≈ RM30–55 pp',mapQ:'Sultan Sofrası Kayseri'},
+ {name:'Başyazıcı Mantı ve Yağlama Evi',area:'Central Kayseri',type:'budget',what:'A small place focused on classic mantı, tray mantı and yağlama. Başyazıcı is also a well-known pastırma and sucuk brand.',price:'≈ RM15–30 pp',mapQ:'Başyazıcı Mantı Yağlama Evi Kayseri'},
+ {name:'Kırk Kaşık Mantı Evi',area:'Central Kayseri',type:'budget',what:'Classic, tray and butter mantı, plus yağlama, içli köfte and sarma.',price:'≈ RM15–30 pp',mapQ:'Kırk Kaşık Mantı Evi Kayseri'},
+ {name:'Family mantı houses off Cumhuriyet Square',area:'Back streets around the square',type:'budget',what:'Small lokantas that have made Kayseri mantı for years, often with an open kitchen. A plate was about ₺100–150 at 2026 prices.',price:'≈ RM10–20 pp',mapQ:'mantı Cumhuriyet Meydanı Kayseri'}
+];
+FOOD.busSahur=[
+ {name:'Pack your sahur before boarding',area:'Kayseri bus station and nearby bakeries',type:'selfcater',what:'Simit or pide, white cheese, olives, boiled eggs, dates, bananas and two bottles of water each. Eat when the bus is close to imsak.',price:'≈ RM8–15 pp',mapQ:'fırın market near Kayseri otogar'},
+ {name:'Kayseri pastırma with bread',area:'Delis around Millet Caddesi',type:'selfcater',what:'Sliced Kayseri pastırma with bread makes a rich sahur on the bus. Ask for it sliced and wrapped, and keep it cool.',price:'≈ RM10–20 pp',mapQ:'pastırma Millet Caddesi Kayseri'},
+ {name:'Highway rest-stop meals',area:'On the Kayseri to Denizli route',type:'eatout',what:'Long-distance buses stop at roadside rest areas through the night. They usually sell soup, simit, tea and snacks. Ask the crew where the stops are and plan sahur around them.',price:'≈ RM8–20 pp',mapQ:'Kayseri otogar'}
+];
+FOOD.pamukkale=[
+ {name:'Hiera Restaurant, Coffee and Tea House',area:'Pamukkale village',type:'budget',what:'Family-run, home-style Turkish food. Visitors praise the meatballs (köfte) and the friendly service.',price:'≈ RM20–35 pp',mapQ:'Hiera Restaurant Pamukkale'},
+ {name:'White House Restaurant',area:'Atatürk Cd. 7, Pamukkale',type:'budget',what:'Village-style Turkish dishes and a traditional breakfast spread. Ask for dishes cooked "köy usulü" (village style).',price:'≈ RM20–35 pp',mapQ:'White House Restaurant Pamukkale'},
+ {name:'Melrose Viewpoint Restaurant',area:'Pamukkale village',type:'sitdown',what:'A local favourite with views toward the travertines and a traditional Turkish menu.',price:'≈ RM25–45 pp',mapQ:'Melrose Viewpoint Restaurant Pamukkale'},
+ {name:'Teras Restaurant Pamukkale',area:'Pamukkale village',type:'sitdown',what:'A wide menu with Turkish grills and other dishes. Check the menu for what you like.',price:'≈ RM25–50 pp',mapQ:'Teras Restaurant Pamukkale'},
+ {name:'Selçuk Pide',area:'Pamukkale village',type:'budget',what:'Pide and lahmacun. A quick, filling iftar.',price:'≈ RM15–25 pp',mapQ:'Selçuk Pide Pamukkale'},
+ {name:'Guesthouse home-cooked iftar',area:'Your Pamukkale guesthouse',type:'hotel',what:'Some family guesthouses will cook dinner if you ask when booking. Request an iftar time and a set menu.',price:'Ask when booking',mapQ:'guesthouse Pamukkale'}
+];
+FOOD.pamukkaleSahur=[
+ {name:'Guesthouse sahur tray',area:'Your guesthouse',type:'hotel',what:'Ask at check-in for a tray before 6:30 am: bread, cheese, olives, eggs, tomato, jam and tea. Breakfast service normally starts after dawn, which is too late for sahur.',price:'Ask the guesthouse',mapQ:'guesthouse Pamukkale'},
+ {name:'Self-catered from a village market',area:'Pamukkale village',type:'selfcater',what:'Buy at iftar time: bread, cheese, eggs, olives, dates, yoghurt and bananas.',price:'≈ RM8–15 pp',mapQ:'market Pamukkale village'}
+];
+
 var D=[
-{id:'d1',date:'Mon 8 Feb 2027',short:'Mon 8 Feb',title:'Land at SAW and fly to Göreme',city:'Göreme, Cappadocia',scene:'d1',imsak:'≈ 6:10 am',iftarAt:'≈ 6:10 pm',
+{id:'d1',date:'Tue 9 Feb 2027',short:'Tue 9 Feb',title:'Land at SAW and fly to Göreme',city:'Göreme, Cappadocia',scene:'d1',imsak:'≈ 6:10 am',iftarAt:'≈ 6:10 pm',
  sum:'A light first day. Get from Sabiha Gökçen to your cave hotel, watch sunset over the valleys and break your fast in town. Ramadan is expected to begin around 8–9 Feb, so confirm the date locally.',
  transit:[
   {mode:'✈️ Flight',title:'SAW → Kayseri (ASR) or Nevşehir (NAV)',text:'Take the domestic flight straight after your international arrival. If the two flights are on separate tickets, leave at least 3 hours between landing and the domestic departure for immigration and bags. Check the baggage allowance on the cheap fare.'},
@@ -338,20 +376,20 @@ var D=[
   {mode:'🚶 On foot',title:'Around Göreme',text:'The town is compact. Your hotel, restaurants and Sunset Point are all walkable.'}
  ],
  hl:[
-  {time:'Afternoon',title:'Check in to your cave hotel',text:'Rest and settle in. Cave rooms are cosy and quiet, and many have heated floors. Ask about a sahur tray for tomorrow.',icon:'🛏️',photo:'Cappadocia cave hotel Göreme room',map:'cave hotel Göreme'},
+  {time:'Afternoon',title:'Check in to your cave hotel',text:'Rest and settle in. Cave rooms are cosy and quiet. Ask about a sahur tray for tomorrow.',icon:'🛏️',photo:'Cappadocia cave hotel Göreme room',map:'cave hotel Göreme'},
   {time:'About 45 min before sunset',title:'Sunset Point over Göreme',text:'A short walk up to a viewpoint over the fairy chimneys. Time your descent for iftar.',icon:'🌇',photo:'Göreme Sunset Point Cappadocia',map:'Göreme Sunset Point',tip:'Carry dates and water in case the sun sets before you are back.'},
   {time:'Evening',title:'Göreme old town at dusk',text:'Wander the lit-up stone houses and small squares before or after iftar.',icon:'🏘️',photo:'Göreme town Cappadocia evening',map:'Göreme town centre'}
  ],
  iftar:FOOD.goreme,sahur:FOOD.goremeSahur,sahurFor:'tomorrow\'s sahur',
- notes:['It is your travel day and the first day of Ramadan is expected around now. Keep plans light.','Winter nights in Cappadocia drop below freezing. Dress warmly for Sunset Point.','Carry some cash (Turkish lira) for shuttles and small shops.']
+ notes:['It is a travel day in the first days of Ramadan. Keep plans light.','Winter nights in Cappadocia drop below freezing. Dress warmly for Sunset Point.','Carry some cash (Turkish lira) for shuttles and small shops.','This plan assumes you land and fly home from Sabiha Gökçen (SAW). If it is Istanbul Airport (IST), the first and last transfers change.']
 },
-{id:'d2',date:'Tue 9 Feb 2027',short:'Tue 9 Feb',title:'Cappadocia on foot, dolmuş and horseback',city:'Göreme, Cappadocia',scene:'d2',imsak:'≈ 6:10 am',iftarAt:'≈ 6:10 pm',
+{id:'d2',date:'Wed 10 Feb 2027',short:'Wed 10 Feb',title:'Cappadocia on foot, dolmuş and horseback',city:'Göreme, Cappadocia',scene:'d2',imsak:'≈ 6:10 am',iftarAt:'≈ 6:10 pm',
  sum:'Your one full day in Cappadocia. Watch the balloons at dawn, visit the rock-cut churches, see Uçhisar Castle, then ride through Rose and Red Valley at sunset. No car needed.',
  transit:[
   {mode:'🚶 On foot',title:'Balloon watching',text:'Balloons lift off around sunrise, about 7:40 am. Watch from your hotel terrace or the Sunset Point hill. Ask your host which rooftop has the best view.'},
   {mode:'🚶 On foot',title:'Göreme town → Göreme Open-Air Museum',text:'About 1–1.5 km uphill, roughly 20–25 minutes. Take care on icy stretches.',dir:['Göreme town','Göreme Open Air Museum','walking']},
   {mode:'🚌 Dolmuş',title:'Göreme → Uçhisar',text:'Minibuses (dolmuş) run from the Göreme bus station toward Uçhisar. Winter frequency is lower, so ask at the station. If none is due, share a taxi and agree the fare before you get in.',
-    alt:'Walking alternative: Pigeon Valley walk from Uçhisar back toward Göreme is about 4–5 km. Skip it if trails are icy.'},
+    alt:'Walking alternative: the Pigeon Valley walk from Uçhisar back toward Göreme is about 4–5 km. Skip it if trails are icy.'},
   {mode:'🐎 Horse ride',title:'Sunset ride, hotel pickup',text:'Most Göreme operators include free hotel pickup, so no car is needed. Book a 2-hour sunset slot, typically starting around 4 pm, and book once the forecast looks clear.'}
  ],
  hl:[
@@ -360,44 +398,66 @@ var D=[
   {time:'Early afternoon',title:'Uçhisar Castle',text:'A giant rock citadel with wide views over Cappadocia. The climb is short but steep, and stone steps can be icy.',icon:'🏰',photo:'Uçhisar Castle Cappadocia',map:'Uçhisar Castle',tip:'Climb early. Save energy for the ride.'},
   {time:'About 4 pm',title:'Sunset horse ride, Rose and Red Valley',text:'A guided 2-hour ride through canyons and fairy chimneys. Beginner-friendly. Operators list about €30–45 pp, some with a weight limit of around 90 kg and cash payment.',icon:'🐎',photo:'Cappadocia sunset horse riding Rose Valley',map:'horse riding Göreme Cappadocia',tip:'Tell the guide you are fasting. Carry dates and water for sunset.'}
  ],
- iftar:FOOD.goreme,sahur:FOOD.goremeSahur,sahurFor:'this morning and tomorrow\'s sahur',
- notes:['Weather can cancel or shorten rides. Choose a free-cancellation booking, or confirm the day before.','Dress in thermal layers, gloves, a beanie and waterproof boots. It is colder on a horse than walking.','Dropped from this plan because they need a car: Derinkuyu, Ihlara Valley, Paşabağ and Devrent.']
+ iftar:FOOD.goreme,sahur:FOOD.goremeSahur,sahurFor:'tomorrow\'s sahur',
+ notes:['Weather can cancel or shorten rides. Choose a free-cancellation booking, or confirm the day before.','Dress in thermal layers, gloves, a beanie and waterproof boots. It is colder on a horse than walking.','Pack tonight. You check out tomorrow morning and carry your bags until the night bus.']
 },
-{id:'d3',date:'Wed 10 Feb 2027',short:'Wed 10 Feb',title:'Bus from Göreme to Konya',city:'Konya',scene:'d3',imsak:'≈ 6:10 am (Göreme)',iftarAt:'≈ 6:25 pm (Konya)',
- sum:'A direct bus takes you from Cappadocia to the city of Rumi. Settle in near the Mevlana complex, see Alaaddin Hill, and share iftar and tarawih in one of Turkey\'s most devout cities.',
+{id:'d3',date:'Thu 11 Feb 2027',short:'Thu 11 Feb',title:'Snow day on Mount Erciyes, then the night bus',city:'Göreme → Kayseri → Erciyes',scene:'erciyes',imsak:'≈ 6:10 am (Göreme)',iftarAt:'≈ 6:10 pm (Kayseri)',
+ sum:'Leave Cappadocia for a snow day on an extinct volcano, then break your fast in Kayseri and board the night bus to Pamukkale. It is a long day, so skiing is left out.',
  transit:[
-  {mode:'🚌 Intercity bus',title:'Göreme bus station → Konya bus station',text:'Direct buses (Kamil Koç, Metro Turizm, FlixBus) take roughly 3 hours 20 to 3 hours 40 and cost around €12 pp. Buses run frequently through the day. Book online on Obilet or FlixBus, or through your hotel, and aim for a departure around 9 am.',dir:['Göreme Bus Station','Konya Otogar','transit']},
-  {mode:'🚋 Tram',title:'Konya bus station → city centre',text:'The bus station is about 7–11 km north of the centre. Take the tram from the bus-station stop toward Alaaddin (about 30–45 minutes), and get off at Alaaddin Hill.',
-    alt:'Faster option: a dolmuş from outside the bus station is roughly half the tram time and costs about the same. A taxi is another fallback for four people with bags.',dir:['Konya Otogar','Alaaddin Hill Konya','transit']},
-  {mode:'🚶 On foot',title:'Alaaddin Hill → Mevlana complex',text:'Walk along Mevlana Caddesi, or hop on a dolmuş running along it. Stay in a hotel near the Mevlana area so everything else is walkable.',dir:['Alaaddin Hill Konya','Mevlana Museum Konya','walking']}
+  {mode:'🚌 Intercity bus',title:'Göreme bus station → Kayseri bus station',text:'About 1½ hours and roughly €10–15 pp. Book on Obilet or at your hotel for around 8:30–9:00 am. If there is no direct departure, go via Nevşehir bus station (about 1 hour onward to Kayseri).',dir:['Göreme Bus Station','Kayseri Bus Terminal','transit']},
+  {mode:'🧳 Left luggage',title:'Leave your bags at Kayseri bus station',text:'Look for the left-luggage (emanet) counter and confirm its hours and price on arrival. Take a daypack with gloves, a hat, water, dates and a charger up the mountain.',alt:'If you cannot leave bags there, ask the counter of the bus company you will use tonight whether they will hold them.'},
+  {mode:'🚐 Minibus',title:'Kayseri → Erciyes ski resort',text:'Minibuses to Erciyes leave from the Yoğunburç Mini Terminal about every 15 minutes, and the ride takes roughly 45–60 minutes. Tell the driver you want the cable car (teleferik) stop. Municipal buses from Kaleönü square run on weekends and school holidays, so do not count on them on a weekday.',
+    alt:'Taxi backup: about ₺300–500 each way for the car, so about ₺100–170 pp for three. Winter schedules change with weather and road conditions.',dir:['Kayseri Yoğunburç Mini Terminal','Erciyes Ski Resort','transit']},
+  {mode:'🚡 Gondola',title:'On the mountain',text:'Ride the gondola for views, then play in the snow. Start heading back by about 3:30 pm so you reach Kayseri before iftar.'},
+  {mode:'🚌 Overnight bus',title:'Kayseri → Denizli (for Pamukkale)',text:'There is no direct bus to Pamukkale. Kamil Koç and others run Kayseri → Denizli about every 4 hours, taking roughly 10–11 hours and costing about $19–40 pp. Take a departure around 8–9 pm so you arrive around 6:30–7:30 am. Book ahead on Obilet and choose reclining seats.',
+    alt:'Rather not spend a night on a bus? Fly the next morning from Kayseri to SAW and on to Denizli Çardak. It takes about 5 to 9 hours depending on the connection and costs more, roughly $60–330 pp. Check AJet and Pegasus.'}
  ],
  hl:[
-  {time:'Afternoon',title:'Alaaddin Hill and its mosque',text:'The Seljuk-era hilltop park at the heart of the old city. A calm first walk after the bus.',icon:'🕌',photo:'Alaaddin Hill Konya mosque',map:'Alaaddin Hill Konya'},
-  {time:'Late afternoon',title:'Selimiye Mosque and Mevlana Caddesi',text:'The Ottoman Selimiye Mosque stands beside the Mevlana complex. Watch the neighbourhood fill up before iftar.',icon:'🌙',photo:'Selimiye Mosque Konya',map:'Selimiye Mosque Konya'},
-  {time:'Evening',title:'Mevlana complex, lit up',text:'The turquoise fluted dome glows after dusk. The museum interior is easier on a fresh morning, so save it for tomorrow.',icon:'🔷',photo:'Mevlana Museum Konya night dome',map:'Mevlana Museum Konya'},
-  {time:'After iftar',title:'Tarawih at Selimiye Mosque',text:'Join the community prayer next to the mausoleum. Check whether a Sema (whirling ceremony) is scheduled; performances are not guaranteed during Ramadan.',icon:'🤲',photo:'Selimiye Mosque Konya Ramadan',map:'Selimiye Mosque Konya'}
+  {time:'Midday',title:'Erciyes gondola',text:'The cable car climbs past 2,500 m on an extinct volcano, with views over the Anatolian plain. Gondola-only passes were about ₺600–900 at 2026 prices.',icon:'🚡',photo:'Erciyes ski resort gondola snow',map:'Erciyes Ski Resort',tip:'Bring gloves, sunglasses and a warm hat. Wind at altitude is strong.'},
+  {time:'Afternoon',title:'Snow play on the slopes',text:'Hire a sled or tube, or watch skiers from the terrace. Skiing is a lot of effort while fasting, so save it for another trip.',icon:'🛷',photo:'Erciyes snow sledding',map:'Erciyes Ski Center Tekir'},
+  {time:'Late afternoon',title:'Kayseri Castle and Cumhuriyet Square',text:'The dark stone castle in the middle of the old town. Free to walk around, and a quiet half hour before iftar.',icon:'🏰',photo:'Kayseri Castle Cumhuriyet Square',map:'Kayseri Castle'},
+  {time:'Iftar',title:'Kayseri mantı for iftar',text:'Kayseri is famous for tiny mantı dumplings and pastırma. Eat early so you have time to collect your bags.',icon:'🥟',photo:'Kayseri mantı',map:'Kayseri mantı restaurant'}
  ],
- iftar:FOOD.konya,sahur:FOOD.konyaSahur,sahurFor:'tomorrow\'s sahur',
- notes:['Konya is conservative and strongly Ramadan-focused. Many cafés and restaurants stay closed until close to iftar, so buy daytime supplies in advance if you need them.','The last bus back toward Göreme historically left around 5 pm, but you are not returning, so this only matters if plans change.','Keep your bags at the hotel and travel light between the bus station and the centre.']
+ iftar:FOOD.kayseri,sahur:FOOD.busSahur,sahurFor:'your sahur on the night bus',
+ notes:['Skiing is skipped on purpose. Lifts and gear add cost and effort while fasting.','Check the weather and road status on the morning you go. Minibus and lift schedules can change.','The night bus saves a hotel night, but bring layers and a neck pillow.','Fridays and weekends are busier on the mountain. Today is a Thursday, so queues should be short.']
 },
-{id:'d4',date:'Thu 11 Feb 2027',short:'Thu 11 Feb',title:'Mevlana, then high-speed rail to Istanbul',city:'Konya → Istanbul (Kadıköy)',scene:'d4',imsak:'≈ 6:15 am (Konya)',iftarAt:'≈ 6:35 pm (Istanbul)',
- sum:'Visit Rumi\'s mausoleum in the morning, then ride the high-speed train to Istanbul. Break your fast on the Asian side in Kadıköy, your base for the last four nights.',
+{id:'d4',date:'Fri 12 Feb 2027',short:'Fri 12 Feb',title:'Pamukkale: the white terraces and Hierapolis',city:'Pamukkale, Denizli',scene:'pamukkale',imsak:'≈ 6:25 am (Denizli)',iftarAt:'≈ 6:40 pm (Pamukkale)',
+ sum:'Arrive in the Aegean hills after the night bus, rest, then walk the white terraces barefoot and wander the Roman spa city of Hierapolis. Friday prayer fits in at midday.',
  transit:[
-  {mode:'🚌 City bus / tram',title:'Hotel → Konya station',text:'Trains depart from Konya Station (main station, about 3 km west of Alaaddin Hill; city bus 38 from the centre, or a short taxi) and also stop at Selçuklu YHT Station, which has a tram stop about 500 m away. Check which station your ticket uses.'},
-  {mode:'🚆 High-speed train (YHT)',title:'Konya → Istanbul (Pendik / Söğütlüçeşme)',text:'A past timetable listed departures around 06:00, 08:45, 12:25 and 18:40, about 4 hours 45 minutes to 5 hours. The 12:25 reaches Pendik about 16:45 and Söğütlüçeşme about 17:20, leaving time for the museum. Buy on TCDD or EBilet in advance, and carry your passports.',dir:['Konya Train Station','Söğütlüçeşme Station Istanbul','transit']},
-  {mode:'🚇 Marmaray + M4',title:'Into Kadıköy',text:'If you get off at Pendik: take Marmaray toward Halkalı to Ayrılık Çeşmesi, then M4 toward Kadıköy. Allow about 1 hour in all. Buy an Istanbulkart at a ticket machine (biletmatik); one card can pay for several people.',
-    alt:'If your train stops at Söğütlüçeşme, you are already in the Kadıköy area. Take a short taxi or dolmuş to your apartment, or walk about 20 minutes.',dir:['Pendik Station Istanbul','Kadıköy Istanbul','transit']}
+  {mode:'🚌 Arrival',title:'Denizli bus station',text:'You should arrive around 6:30–7:30 am. You eat sahur on the bus before imsak.'},
+  {mode:'🚐 Dolmuş',title:'Denizli → Pamukkale village',text:'About 18 km, around 30 minutes. Minibuses (dolmuş) leave from the bus station area for Pamukkale, so ask for "Pamukkale". Drop your bags at your guesthouse even if the room is not ready.',alt:'Taxi backup: share one between three if no minibus is waiting.'},
+  {mode:'🚶 On foot',title:'Village → travertines',text:'The entrance is a short walk from the village. Shoes must come off on the terraces, so carry them. The water is cold in February.',dir:['Pamukkale village','Pamukkale Travertines South Gate','walking']}
  ],
  hl:[
-  {time:'Morning',title:'Mevlana Museum',text:'The mausoleum of Rumi, under the turquoise dome, is the spiritual heart of Konya. Check Ramadan opening hours, and dress modestly.',icon:'🔷',photo:'Mevlana Museum Konya interior tomb Rumi',map:'Mevlana Museum Konya',tip:'Visit as soon as it opens to have space and quiet.'},
-  {time:'Midday',title:'The train ride across Anatolia',text:'About 5 hours through Eskişehir toward the Marmara coast. Bring sahur leftovers, water and a charger.',icon:'🚆',photo:'Turkish high speed train YHT Konya Istanbul',map:'Konya Train Station'},
-  {time:'Around iftar',title:'Kadıköy Pier and Moda seafront',text:'After you check in and break your fast, take an evening stroll by the water. It is a gentle first taste of Istanbul.',icon:'⛴️',photo:'Kadıköy pier Istanbul evening',map:'Kadıköy Pier Istanbul',tip:'Keep dates and water in your bag in case iftar arrives while you are still in transit.'}
+  {time:'Morning',title:'Pamukkale travertines',text:'White limestone terraces filled with warm mineral water, walked barefoot. In winter some pools are dry or cold.',icon:'🤍',photo:'Pamukkale travertines turquoise pools',map:'Pamukkale travertines',tip:'The €30 ticket (about RM140) covers the terraces, Hierapolis and the museum. It is single entry.'},
+  {time:'Late morning',title:'Hierapolis ancient city and theatre',text:'A Roman spa city above the terraces. Walk the colonnaded street, the carved theatre and the huge necropolis.',icon:'🏛️',photo:'Hierapolis ancient theatre Pamukkale',map:'Hierapolis ancient city Pamukkale'},
+  {time:'Around Friday prayer',title:'Jumu\'ah in the village',text:'Pray at a local mosque. Ask your guesthouse which one is nearest and when the sermon starts.',icon:'🕌',photo:'Pamukkale village mosque',map:'mosque Pamukkale village'},
+  {time:'Afternoon',title:'Hierapolis Archaeology Museum',text:'Carved sarcophagi and reliefs from the site, included in the same ticket. A good indoor stop if it rains.',icon:'🏺',photo:'Hierapolis Archaeology Museum',map:'Hierapolis Archaeology Museum'},
+  {time:'Optional',title:'Cleopatra\'s Antique Pool',text:'A thermal pool scattered with fallen Roman columns. It costs extra on top of the site ticket. Skip it if you would rather save energy while fasting.',icon:'♨️',photo:'Cleopatra Antique Pool Pamukkale',map:'Cleopatra Antique Pool Pamukkale'}
+ ],
+ iftar:FOOD.pamukkale,sahur:FOOD.pamukkaleSahur,sahurFor:'tomorrow\'s sahur',
+ notes:['Winter gate hours differ by source, from about 6 pm to 9 pm. Confirm at the entrance when you arrive.','The ticket is single entry, so do the terraces and Hierapolis in one visit.','Rest after the night bus and keep the afternoon flexible.','Agents at the gate may add an audio guide or extras. Say no thanks if you do not want them.']
+},
+{id:'d5',date:'Sat 13 Feb 2027',short:'Sat 13 Feb',title:'Pamukkale to Istanbul',city:'Pamukkale → Istanbul (Kadıköy)',scene:'d7',imsak:'≈ 6:30 am (Pamukkale)',iftarAt:'≈ 6:35 pm (Istanbul)',
+ sum:'A slow morning in the village, then a short flight to Istanbul and the metro to Kadıköy for iftar. Flight schedules vary by day, so pick one that leaves in the early afternoon.',
+ transit:[
+  {mode:'🚐 Shuttle',title:'Pamukkale → Denizli Çardak Airport (DNZ)',text:'About 65–70 km, around 1 hour. Take a shared shuttle (about €10–15 pp), or a private transfer (about €50 per vehicle, which is about €17 pp for three). Book through your guesthouse the day before and leave about 3–3½ hours before your flight.',
+    alt:'Cheaper but slower: a dolmuş to Denizli bus station, then the Havaş airport bus timed to flights. Allow about 2 hours.'},
+  {mode:'✈️ Flight',title:'DNZ → Sabiha Gökçen (SAW)',text:'About 1¼ hours on AJet or Pegasus. One-way fares were about €40–90 when booked ahead. Check which days and times run, because schedules are limited.',
+    alt:'No suitable flight? An overnight bus from Denizli to Istanbul takes about 8–9 hours. If you take it, you arrive on the morning of Day 6.'},
+  {mode:'🚇 Metro M4',title:'SAW → Kadıköy',text:'About 52 minutes. Buy an Istanbulkart at a ticket machine; one card can pay for several people.',dir:['Sabiha Gökçen Airport','Kadıköy Istanbul','transit']}
+ ],
+ hl:[
+  {time:'Morning',title:'A last look at the white hillside',text:'Take a slow walk around the village, have sahur leftovers and pack. The terraces glow in the morning light.',icon:'☕',photo:'Pamukkale village morning travertines',map:'Pamukkale village'},
+  {time:'Optional',title:'Karahayıt red springs',text:'A short ride from the village. Mineral-red terraces and thermal springs outside the main ticketed site. Check entry and opening hours first.',icon:'🔴',photo:'Karahayıt red springs Pamukkale',map:'Karahayıt Red Water Pamukkale'},
+  {time:'Afternoon',title:'Fly to Istanbul',text:'A short hop from the Aegean hills to the Marmara coast.',icon:'✈️',photo:'Denizli Çardak Airport',map:'Denizli Çardak Airport'},
+  {time:'Around iftar',title:'Kadıköy Pier and Moda seafront',text:'After you check in and break your fast, take an evening stroll by the water.',icon:'⛴️',photo:'Kadıköy pier Istanbul evening',map:'Kadıköy Pier Istanbul',tip:'Keep dates and water in your bag in case iftar arrives while you are in transit.'}
  ],
  iftar:FOOD.kadikoy,sahur:FOOD.istanbulSahur,sahurFor:'tomorrow\'s sahur',
- notes:['Timetables above come from a past schedule. Confirm the current February times before booking.','If your train is late, break your fast with dates and water on board.','Buy sahur groceries on the way from the station, before shops close.']
+ notes:['Confirm the DNZ → SAW schedule as soon as you book, since it may not run every day.','If your flight lands late, break your fast with dates and water on board.','Buy sahur groceries on the way from the metro, before shops close.']
 },
-{id:'d5',date:'Fri 12 Feb 2027',short:'Fri 12 Feb',title:'Sultanahmet: Hagia Sophia, Blue Mosque, cistern and Topkapı',city:'Istanbul (Sultanahmet)',scene:'d5',imsak:'≈ 6:30 am',iftarAt:'≈ 6:35 pm',
- sum:'The old city\'s big four, ordered around Friday prayers. Do the mosques and the cistern before noon, then Topkapı Palace in the afternoon, with iftar in the historic quarter.',
+{id:'d6',date:'Sun 14 Feb 2027',short:'Sun 14 Feb',title:'Sultanahmet: Hagia Sophia, Blue Mosque, cistern and Topkapı',city:'Istanbul (Sultanahmet)',scene:'d5',imsak:'≈ 6:30 am',iftarAt:'≈ 6:35 pm',
+ sum:'The old city\'s big four. Do the mosques and the cistern in the morning, then Topkapı Palace in the afternoon, with iftar in the historic quarter.',
  transit:[
   {mode:'⛴️ Ferry',title:'Kadıköy → Eminönü',text:'Take the Şehir Hatları public ferry from Kadıköy pier, about 20 minutes, and pay with your Istanbulkart.',dir:['Kadıköy Pier','Eminönü Pier Istanbul','transit']},
   {mode:'🚋 Tram T1',title:'Eminönü → Sultanahmet',text:'Take the T1 tram (Bağcılar–Kabataş) three stops to Sultanahmet, or walk about 15 minutes uphill. Everything is then within about 10 minutes\' walk.'},
@@ -406,19 +466,19 @@ var D=[
  hl:[
   {time:'Morning',title:'Hagia Sophia',text:'A 6th-century domed church that is now a working mosque. The ground floor is the prayer hall. Foreign visitors sightsee from the upper level with a ticket of about €25. Confirm the current rules on the official ticket site.',icon:'🕌',photo:'Hagia Sophia Istanbul interior dome',map:'Hagia Sophia Istanbul'},
   {time:'Morning',title:'Blue Mosque (Sultanahmet Mosque)',text:'Six minarets and thousands of blue İznik tiles. Free to enter outside prayer times.',icon:'🔵',photo:'Blue Mosque Sultanahmet Istanbul interior',map:'Sultan Ahmed Mosque Istanbul'},
-  {time:'Before Friday prayer',title:'Basilica Cistern',text:'A cool underground Byzantine reservoir, lit softly among 336 columns. Book a timed ticket if possible.',icon:'🏛️',photo:'Basilica Cistern Istanbul',map:'Basilica Cistern Istanbul'},
-  {time:'After Friday prayer',title:'Topkapı Palace and Harem',text:'The Ottoman sultans\' palace, with courtyards, treasury and Bosphorus terraces. The Harem needs a separate ticket.',icon:'👑',photo:'Topkapı Palace Istanbul courtyard',map:'Topkapı Palace Istanbul',tip:'If you are flagging, skip the Harem and enjoy the courtyards and terrace.'},
+  {time:'Late morning',title:'Basilica Cistern',text:'A cool underground Byzantine reservoir, lit softly among 336 columns. Book a timed ticket if possible.',icon:'🏛️',photo:'Basilica Cistern Istanbul',map:'Basilica Cistern Istanbul'},
+  {time:'Afternoon',title:'Topkapı Palace and Harem',text:'The Ottoman sultans\' palace, with courtyards, treasury and Bosphorus terraces. The Harem needs a separate ticket.',icon:'👑',photo:'Topkapı Palace Istanbul courtyard',map:'Topkapı Palace Istanbul',tip:'If you are flagging, skip the Harem and enjoy the courtyards and terrace.'},
   {time:'Evening',title:'Sultanahmet at iftar',text:'The square fills with families for iftar, and the mosques glow after dusk. Stay for tarawih if you wish.',icon:'🌙',photo:'Sultanahmet Square Ramadan iftar Istanbul',map:'Sultanahmet Square Istanbul'}
  ],
  iftar:FOOD.sultanahmet,sahur:FOOD.istanbulSahur,sahurFor:'tomorrow\'s sahur',
- notes:['Friday midday prayer roughly 12:30–14:00: mosques limit visitors. Do Hagia Sophia and the Blue Mosque first, or pray Jumu\'ah there.','Dress modestly: covered shoulders and knees, and a headscarf for women in mosques. Shoes come off.','It is a long walking day while fasting. Take the cistern and palace at your own pace and rest in Gülhane Park.']
+ notes:['Mosques pause visits for about 30–45 minutes around each of the five daily prayers. Plan your order around them.','Dress modestly: covered shoulders and knees, and a headscarf for women in mosques. Shoes come off.','It is a long walking day while fasting. Take the cistern and palace at your own pace and rest in Gülhane Park.']
 },
-{id:'d6',date:'Sat 13 Feb 2027',short:'Sat 13 Feb',title:'Golden Horn: Balat, Eyüp and Süleymaniye',city:'Istanbul (Golden Horn)',scene:'d6',imsak:'≈ 6:30 am',iftarAt:'≈ 6:35 pm',
+{id:'d7',date:'Mon 15 Feb 2027',short:'Mon 15 Feb',title:'Golden Horn: Balat, Eyüp and Süleymaniye',city:'Istanbul (Golden Horn)',scene:'d6',imsak:'≈ 6:30 am',iftarAt:'≈ 6:35 pm',
  sum:'A quieter day along the Golden Horn: colourful Balat, the pilgrimage mosque of Eyüp, a hilltop view, and Sinan\'s Süleymaniye. Cross Galata Bridge at dusk and ferry home for iftar. No bazaars.',
  transit:[
   {mode:'⛴️ Ferry',title:'Kadıköy → Eminönü',text:'The public ferry takes about 20 minutes.',dir:['Kadıköy Pier','Eminönü Pier Istanbul','transit']},
   {mode:'🚋 Tram T5',title:'Eminönü → Fener / Balat → Eyüp',text:'The T5 tram runs along the Golden Horn to Fener, Balat, Ayvansaray and Eyüp Sultan. Hop off at Fener or Balat first, then continue to Eyüp. Confirm the line on your Istanbul transit app.',
-    alt:'If T5 is disrupted, take a city bus from Eminönü toward Eyüp, or a taxi shared four ways.'},
+    alt:'If T5 is disrupted, take a city bus from Eminönü toward Eyüp, or a taxi shared three ways.'},
   {mode:'🚡 Cable car',title:'Eyüp → Pierre Loti Hill',text:'A short cable car climbs to the hilltop café and viewpoint. It can close in bad weather, so check first. Walk down through the old cemetery if you prefer.'},
   {mode:'🚋 Tram + walk',title:'Eyüp → Süleymaniye',text:'Take T5 back toward Eminönü, then walk about 15–20 minutes uphill to Süleymaniye.'},
   {mode:'⛴️ Ferry',title:'Galata Bridge → Karaköy → Kadıköy',text:'Walk across Galata Bridge at dusk to Karaköy pier, then take the Karaköy–Kadıköy ferry home.'}
@@ -426,17 +486,17 @@ var D=[
  hl:[
   {time:'Morning',title:'Fener and Balat',text:'Steep lanes lined with painted houses, old churches and small cafés. Walk, look and photograph.',icon:'🎨',photo:'Balat Istanbul colourful houses',map:'Balat Istanbul'},
   {time:'Late morning',title:'Eyüp Sultan Mosque',text:'One of Islam\'s most visited sites in Turkey, beside the tomb of Abu Ayyub al-Ansari, a companion of the Prophet. Especially moving during Ramadan.',icon:'🕋',photo:'Eyüp Sultan Mosque Istanbul',map:'Eyüp Sultan Mosque',tip:'Dress modestly and keep your voice low. It is an active place of pilgrimage.'},
-  {time:'Midday',title:'Pierre Loti Hill',text:'Views over the Golden Horn from the hilltop café. Have tea if you are not fasting, or simply enjoy the view.',icon:'🚡',photo:'Pierre Loti Hill Istanbul Golden Horn view',map:'Pierre Loti Hill Istanbul'},
+  {time:'Midday',title:'Pierre Loti Hill',text:'Views over the Golden Horn from the hilltop café. Enjoy the view, and have tea after iftar if you like.',icon:'🚡',photo:'Pierre Loti Hill Istanbul Golden Horn view',map:'Pierre Loti Hill Istanbul'},
   {time:'Afternoon',title:'Süleymaniye Mosque',text:'Sinan\'s great mosque above the Golden Horn, with the tombs of Süleyman and Sinan and a terrace with broad views. Free to visit outside prayer times.',icon:'🕌',photo:'Süleymaniye Mosque Istanbul',map:'Süleymaniye Mosque Istanbul'},
   {time:'Dusk',title:'Galata Bridge at sunset',text:'Fishermen line the rails while the skyline lights up. Galata Tower looks great from below, so skip the paid climb.',icon:'🌉',photo:'Galata Bridge sunset Istanbul',map:'Galata Bridge Istanbul'}
  ],
  iftar:FOOD.kadikoy,sahur:FOOD.istanbulSahur,sahurFor:'tomorrow\'s sahur before your flight',
- notes:['Eyüp is very busy near iftar. Aim to finish there by mid-afternoon.','Ferries are lovely but can be rough and cold. Keep your jacket on and a hood or scarf handy.','Shopping is deliberately left out. The Grand Bazaar and Spice Bazaar are not in this plan.']
+ notes:['Eyüp is very busy near iftar. Aim to finish there by mid-afternoon.','Ferries are lovely but can be rough and cold. Keep your jacket on and a hood or scarf handy.','Shopping is deliberately left out. The Grand Bazaar and Spice Bazaar are not in this plan.','Dolmabahçe Palace is closed on Mondays, so it is not included.']
 },
-{id:'d7',date:'Sun 14 Feb 2027',short:'Sun 14 Feb',title:'Sahur, metro to SAW and fly home',city:'Kadıköy → SAW',scene:'d7',imsak:'≈ 6:25 am',iftarAt:'≈ 6:35 pm',
+{id:'d8',date:'Tue 16 Feb 2027',short:'Tue 16 Feb',title:'Sahur, metro to SAW and fly home',city:'Kadıköy → SAW',scene:'d7',imsak:'≈ 6:25 am',iftarAt:'≈ 6:35 pm',
  sum:'Sahur, tidy up and take the M4 metro straight to the airport. You have time for a slow morning only if your flight is late.',
  transit:[
-  {mode:'🚇 Metro M4',title:'Kadıköy → Sabiha Gökçen Airport',text:'M4 runs directly from Kadıköy to SAW in about 52 minutes, with trains every 5–6 minutes. It normally runs 06:00 to midnight and continuously at weekends. Leave about 4½ hours before your flight to allow for the ride, check-in and security.',dir:['Kadıköy Metro Station Istanbul','Sabiha Gökçen Airport','transit'],
+  {mode:'🚇 Metro M4',title:'Kadıköy → Sabiha Gökçen Airport',text:'M4 runs directly from Kadıköy to SAW in about 52 minutes, with trains every 5–6 minutes. It normally runs 06:00 to midnight. Leave about 4½ hours before your flight to allow for the ride, check-in and security.',dir:['Kadıköy Metro Station Istanbul','Sabiha Gökçen Airport','transit'],
     alt:'Backups: the Havabus SG-1 to and from Kadıköy (about 50 minutes, roughly hourly, longer in traffic) or a taxi (about 30–45 minutes; agree the fare or use the meter).'}
  ],
  hl:[
@@ -445,25 +505,29 @@ var D=[
   {time:'Departure',title:'Fly SAW → Kuala Lumpur',text:'Sabiha Gökçen is where you land and fly out. Some airlines can serve iftar or sahur meals on request. Ask when checking in or booking.',icon:'✈️',photo:'Sabiha Gökçen Airport Istanbul',map:'Sabiha Gökçen Airport'}
  ],
  iftar:FOOD.kadikoy,sahur:FOOD.istanbulSahur,sahurFor:'this morning',iftarLabel:'Iftar in Istanbul or on the plane',
- notes:['Leave earlier if you have checked baggage or an evening international rush.','If your flight crosses sunset, pack dates and water and ask the crew about iftar meals.','Turn in the last Istanbulkart balance or keep it for a future trip.']
+ notes:['Leave earlier if you have checked baggage.','If your flight crosses sunset, pack dates and water and ask the crew about iftar meals.','Top up or keep your Istanbulkart for a future trip.']
 }
 ];
 
-var BOOK=['SAW → Kayseri/Nevşehir flight (one-way; check baggage rules)','Airport shuttle to Göreme (share your flight number)','Göreme cave hotel, 2 nights (ask about a sahur tray)','Sunset horse ride (free cancellation; confirm once the forecast is clear)','Göreme → Konya bus (Obilet or FlixBus, around 9 am)','Konya hotel near Mevlana, 1 night','Konya → Istanbul high-speed train (TCDD or EBilet; passports)','Kadıköy apartment, 3 nights','Istanbulkart (one card can pay for several people)','eSIM or roaming plan'];
-var PACK=['Thermal base layers','Warm waterproof jacket','Waterproof boots with good grip','Gloves, beanie and scarf','Compact umbrella','Lip balm and moisturiser','Modest clothing for mosques (headscarf for women)','Small travel prayer mat','Dates and a water bottle','Power bank','Plug adapter (Turkey uses Type C/F, Malaysia uses Type G)','Passport copies'];
+var BOOK=['SAW → Kayseri/Nevşehir flight (one-way; check baggage rules)','Airport shuttle to Göreme (share your flight number)','Göreme cave hotel, 2 nights (ask about a sahur tray)','Sunset horse ride (free cancellation; confirm once the forecast is clear)','Göreme → Kayseri bus on Day 3 (Obilet, around 8:30–9:00 am)','Kayseri → Denizli overnight bus on Day 3 (around 8–9 pm; or a flight via Istanbul)','Pamukkale guesthouse, 1 night (ask about bag drop, early check-in and a sahur tray)','Pamukkale and Hierapolis ticket, about €30 pp (single entry)','Shuttle from Pamukkale to Denizli Çardak Airport (shared or private)','DNZ → SAW flight on Day 5 (check which days and times run)','Kadıköy apartment, 3 nights','Istanbulkart (one card can pay for several people)','eSIM or roaming plan'];
+var PACK=['Thermal base layers','Warm waterproof jacket','Waterproof gloves, beanie and scarf','Sunglasses (snow glare at Erciyes)','Waterproof boots with good grip','Thick socks and a small towel for barefoot travertines','Light daypack for the Erciyes day','Neck pillow and a layer for the night bus','Compact umbrella','Lip balm and moisturiser','Modest clothing for mosques (headscarf for women)','Small travel prayer mat','Dates and a water bottle','Power bank','Plug adapter (Turkey uses Type C/F, Malaysia uses Type G)','Passport copies'];
 
 var BUDGET=[
- ['KUL ⇄ SAW flight (your quote)','1,953','1,953'],
- ['SAW → Cappadocia, one-way (your RM289 is a round trip)','150','200'],
+ ['KUL ⇄ SAW flight (your quote for 8–14 Feb; recheck for 9–16 Feb)','1,953','1,953'],
+ ['SAW → Kayseri, one-way','150','200'],
  ['Airport shuttle to Göreme','45','60'],
  ['Göreme cave hotel, 2 nights (shared)','150','300'],
  ['Göreme Open-Air Museum and Uçhisar entry','60','100'],
  ['Sunset horse ride (2 hours)','140','210'],
- ['Bus Göreme → Konya','45','70'],
- ['Konya hotel, 1 night, plus local tram or dolmuş','70','120'],
- ['Train Konya → Istanbul','60','110'],
- ['Kadıköy apartment, 3 nights (shared)','190','300'],
- ['Food (fasting: sahur plus iftar)','250','400'],
+ ['Bus Göreme → Kayseri, plus local buses','40','70'],
+ ['Erciyes: minibus, gondola and snow play','75','125'],
+ ['Overnight bus Kayseri → Denizli','100','170'],
+ ['Pamukkale guesthouse, 1 night (shared)','40','80'],
+ ['Pamukkale and Hierapolis ticket (€30)','140','150'],
+ ['Pamukkale shuttle and dolmuş','50','80'],
+ ['Flight Denizli → SAW','190','400'],
+ ['Kadıköy apartment, 3 nights (shared by 3)','230','380'],
+ ['Food (fasting: sahur plus iftar)','280','450'],
  ['Istanbul transport (Istanbulkart, ferries, metro)','60','100'],
  ['Topkapı with Harem, Basilica Cistern','340','390'],
  ['eSIM','30','50'],
@@ -536,11 +600,12 @@ function dayView(i){
 function planView(){
   var h='<h2 style="margin-top:6px">The route</h2><p class="ui" style="color:var(--muted);max-width:60ch">Tap a place to jump to that day. Every leg is by plane, bus, train, tram, ferry or metro.</p>';
   var stops=[
-   ['Sabiha Gökçen (SAW)','Land Mon 8 Feb','d1','Flight to Cappadocia, about 1½ hours'],
-   ['Göreme, Cappadocia','Days 1–2 · 2 nights','d1','Direct bus, about 3½ hours'],
-   ['Konya','Day 3 · 1 night','d3','High-speed train, about 5 hours'],
-   ['Istanbul (Kadıköy base)','Days 4–7 · 3 nights','d4','M4 metro, about 52 minutes'],
-   ['Sabiha Gökçen (SAW)','Fly home Sun 14 Feb','d7','']
+   ['Sabiha Gökçen (SAW)','Land Tue 9 Feb','d1','Flight to Cappadocia, about 1½ hours'],
+   ['Göreme, Cappadocia','Days 1–2 · 2 nights','d1','Bus to Kayseri, about 1½ hours'],
+   ['Kayseri and Mount Erciyes','Day 3 · snow day','d3','Overnight bus, about 10–11 hours'],
+   ['Pamukkale','Days 4–5 · 1 night','d4','Shuttle and flight to Istanbul, about 4 hours in all'],
+   ['Istanbul (Kadıköy base)','Days 5–8 · 3 nights','d5','M4 metro to the airport, about 52 minutes'],
+   ['Sabiha Gökçen (SAW)','Fly home Tue 16 Feb','d8','']
   ];
   h+='<ul class="route">'+stops.map(function(s){
     return '<li class="stop"><div class="dot"><i></i><b></b></div><div><button data-go="'+s[2]+'"><h3>'+esc(s[0])+'</h3><span class="sub">'+esc(s[1])+'</span></button>'+(s[3]?'<div class="leg">'+esc(s[3])+'</div>':'')+'</div></li>';
@@ -549,7 +614,7 @@ function planView(){
     return '<button class="gcard" data-go="'+d.id+'"><div class="d">Day '+(i+1)+' · '+esc(d.short)+'</div><h4>'+esc(d.title)+'</h4><div class="d">'+esc(d.city)+'</div><div class="f">Sahur '+esc(d.imsak)+' · Iftar '+esc(d.iftarAt)+'</div></button>';
   }).join('')+'</div>';
   h+='<h2>Book first</h2><p class="legend ui">Tick items off as you book them. Your ticks are saved in this browser only.</p>'+checklist('book',BOOK);
-  h+='<h2>How to read this guide</h2><div class="notes"><ul><li>Fasting times are estimates from sun position for each city. Confirm with Diyanet or your prayer app.</li><li>Every day lists iftar options and sahur options, with a halal note on each.</li><li>Shopping stops are left out on purpose, including the Grand Bazaar and Spice Bazaar.</li><li>This is a draft. Tell me what to change: pace, budget, restaurants or days.</li></ul></div>';
+  h+='<h2>How to read this guide</h2><div class="notes"><ul><li>Fasting times are estimates from sun position for each city. Confirm with Diyanet or your prayer app.</li><li>Every day lists iftar options and sahur options, with a halal note on each.</li><li>Shopping stops are left out on purpose, including the Grand Bazaar and Spice Bazaar.</li><li>The route uses one overnight bus (Day 3) to reach Pamukkale. A flight alternative is listed in the Day 3 steps.</li><li>This plan assumes you land and fly out of Sabiha Gökçen (SAW). If it is Istanbul Airport (IST), tell me and I will change the transfers.</li><li>This is a draft. Tell me what to change: pace, budget, restaurants or days.</li></ul></div>';
   return h;
 }
 
@@ -568,16 +633,17 @@ function tipsView(){
   h+='<div class="tw"><table class="ui"><thead><tr><th>Item</th><th class="n">Low</th><th class="n">High</th></tr></thead><tbody>'+
    BUDGET.map(function(r){return '<tr><td>'+esc(r[0])+'</td><td class="n">'+r[1]+'</td><td class="n">'+r[2]+'</td></tr>';}).join('')+
    '<tr class="total"><td>Total per person</td><td class="n">'+fmt(lo)+'</td><td class="n">'+fmt(hi)+'</td></tr>'+
-   '<tr class="total"><td>Group of 4</td><td class="n">'+fmt(lo*4)+'</td><td class="n">'+fmt(hi*4)+'</td></tr></tbody></table></div>';
-  h+='<p class="legend ui" style="margin-top:10px">Everything except the KUL flight is an estimate. Converted at about 12 TL = RM1 and €1 = RM4.7. Lira prices may rise 10–20% by February. There is no balloon flight, no car rental and no shopping in this total. The optional Hagia Sophia upper-level ticket is about €25 (≈ RM105) on top.</p>';
+   '<tr class="total"><td>Group of 3</td><td class="n">'+fmt(lo*3)+'</td><td class="n">'+fmt(hi*3)+'</td></tr></tbody></table></div>';
+  h+='<p class="legend ui" style="margin-top:10px">Everything except the KUL flight is an estimate. Converted at about 12 TL = RM1 and €1 = RM4.7. Lira prices may rise 10–20% by February. There is no balloon flight, no skiing, no car rental and no shopping in this total. The KUL flight is your earlier quote for 8–14 Feb, so recheck it for 9–16 Feb. The optional Hagia Sophia upper-level ticket is about €25 (≈ RM105) on top.</p>';
   h+='<h2>Weather in February</h2><div class="cards2">'+
    '<div class="card"><h4>Göreme</h4><p>Roughly −5 to 6 °C. Snow and ice are common. Coldest at dawn.</p></div>'+
-   '<div class="card"><h4>Konya</h4><p>Roughly −4 to 6 °C. Cold and dry, with chilly evenings.</p></div>'+
+   '<div class="card"><h4>Erciyes</h4><p>Roughly −12 to −2 °C up the mountain, with strong wind and bright snow glare.</p></div>'+
+   '<div class="card"><h4>Pamukkale</h4><p>Roughly 3 to 13 °C, often damp. The terrace water is cold, and rain is possible.</p></div>'+
    '<div class="card"><h4>Istanbul</h4><p>Roughly 3 to 10 °C. Rain about half the days, and a cold wind off the water.</p></div></div>';
   h+='<h2>Packing</h2>'+checklist('pack',PACK);
   h+='<h2>Getting around Istanbul</h2><div class="notes"><ul><li>An Istanbulkart pays for metro, Marmaray, trams, buses and ferries. One card can pay for several people.</li><li>M4 metro links Kadıköy and SAW in about 52 minutes and connects to Marmaray at Ayrılık Çeşmesi.</li><li>Ferries from Kadıköy to Eminönü and Karaköy are the scenic, cheap way across.</li></ul></div>';
   h+='<h2>Ramadan tips</h2><div class="notes"><ul><li>Arrive at restaurants 30–45 minutes before iftar. Popular places fill quickly.</li><li>Carry dates and water in case iftar arrives while you travel.</li><li>Konya is very devout, so expect quiet days and busy evenings.</li><li>Fasting is easier in the cold, but the long walking days add up. Do the heaviest walking in the morning.</li></ul></div>';
-  h+='<h2>What this plan leaves out</h2><div class="notes"><ul><li>Shopping: the Grand Bazaar, Spice Bazaar and shopping streets.</li><li>Car-only sights: Derinkuyu, Ihlara Valley, Sultanhanı Caravanserai, Paşabağ and Devrent.</li><li>A balloon flight. Watching from the ground is free.</li></ul></div>';
+  h+='<h2>What this plan leaves out</h2><div class="notes"><ul><li>Shopping: the Grand Bazaar, Spice Bazaar and shopping streets.</li><li>Car-only sights: Derinkuyu, Ihlara Valley, Sultanhanı Caravanserai, Paşabağ and Devrent.</li><li>Konya and the Mevlana Museum, which were in the earlier 7-day plan.</li><li>Skiing at Erciyes. The day is a gondola and snow-play day instead.</li><li>A balloon flight. Watching from the ground is free.</li></ul></div>';
   return h;
 }
 
