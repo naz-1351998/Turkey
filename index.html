@@ -197,7 +197,7 @@ footer{color:var(--muted);font-size:.95rem;padding:20px 0 40px;border-top:1px so
 <div class="tile-band" aria-hidden="true"></div>
 <header class="wrap mast">
   <h1>Cappadocia, Erciyes and Pamukkale</h1>
-  <p class="ui">An eight-day Ramadan route for three, by public transport only. Land and fly out of Sabiha Gökçen (SAW), with Istanbul at both ends.</p>
+  <p class="ui">An eight-day Ramadan route for three, by public transport only. Land and fly out of Istanbul Airport (IST) on Turkish Airlines.</p>
   <div class="chips ui" aria-label="Trip facts">
     <span class="chip">9–16 Feb 2027</span>
     <span class="chip">Group of 3</span>
@@ -318,13 +318,6 @@ FOOD.konyaSahur=[
  {name:'Self-catered from a market',area:'Near your hotel',type:'selfcater',what:'Buy bread, cheese, eggs, olives, dates and yoghurt after iftar. The nearby BİM, A101 or Şok stores are the easiest.',price:'≈ RM8–15 pp',mapQ:'market near Mevlana Museum Konya'},
  {name:'Late-night sahur menus',area:'Around Mevlana Caddesi',type:'eatout',what:'Some restaurants open around dawn in Ramadan. Search Maps for "sahur" near your hotel and confirm that night\'s hours.',price:'Varies',mapQ:'sahur Konya Mevlana'}
 ];
-FOOD.kadikoy=[
- {name:'Çiya Sofrası',area:'Kadıköy, central. Three branches close together',type:'sitdown',what:'Anatolian home cooking: seasonal stews, stuffed vegetables, kebabs and desserts. One of Istanbul\'s best-known restaurants.',price:'≈ RM50–90 pp',mapQ:'Çiya Sofrası Kadıköy',note:'Arrive about 45 minutes before iftar to avoid queues.'},
- {name:'Yanyalı Fehmi Lokantası',area:'Kadıköy',type:'sitdown',what:'Traditional lokanta serving classic Turkish dishes.',price:'≈ RM40–70 pp',mapQ:'Yanyalı Fehmi Lokantası Kadıköy'},
- {name:'Khalkedon Cafe Restaurant',area:'Kadıköy seafront',type:'sitdown',what:'Run by the Kadıköy municipality, with sea views and an iftar menu.',price:'≈ RM40–70 pp',mapQ:'Khalkedon Cafe Restaurant Kadıköy'},
- {name:'Neighbourhood lokanta or pide shop',area:'Kadıköy Çarşı (market streets)',type:'budget',what:'Look for "Ramazan menüsü" boards: soup, main and dessert as a fixed set.',price:'≈ RM20–40 pp',mapQ:'lokanta Kadıköy Çarşı'},
- {name:'Ramazan pidesi and soup at home',area:'Any Kadıköy bakery, then your apartment',type:'budget',what:'Buy warm Ramazan pidesi just before iftar. Eat it with dates, olives and cheese. This is the easiest option on arrival day.',price:'≈ RM10–20 pp',mapQ:'fırın Kadıköy'}
-];
 FOOD.sultanahmet=[
  {name:'Sultanahmet Square iftar tent',area:'Sultanahmet Square',type:'free',what:'Municipal iftar tents are typically set up at Sultanahmet and Eyüp during Ramadan, serving free community meals. Queues start early.',price:'Free or low cost',mapQ:'Sultanahmet Square Istanbul',note:'Locations change every year, so confirm on the Istanbul municipality announcements.'},
  {name:'Tarihi Sultanahmet Köftecisi Selim Usta',area:'Divan Yolu Cad. 12',type:'sitdown',what:'Classic grilled köfte with piyaz salad. Its 2026 set iftar menu was about ₺1,100 pp (≈ RM90), but ordering à la carte is much cheaper.',price:'≈ RM30–90 pp',mapQ:'Tarihi Sultanahmet Köftecisi Selim Usta'},
@@ -335,9 +328,9 @@ FOOD.sultanahmet=[
  {name:'Eminönü balık ekmek (fish sandwich)',area:'By the Galata Bridge',type:'budget',what:'Grilled fish in bread. A light, cheap iftar that goes well with soup from a nearby lokanta.',price:'≈ RM10–18 pp',mapQ:'balık ekmek Eminönü'}
 ];
 FOOD.istanbulSahur=[
- {name:'Self-catered at the apartment (recommended)',area:'Kadıköy',type:'selfcater',what:'Shop after iftar at Migros, BİM, A101 or Şok, or at the Kadıköy Çarşı grocers: bread, white cheese, olives, eggs, honey, yoghurt, dates and bananas.',price:'≈ RM8–15 pp',mapQ:'supermarket Kadıköy'},
- {name:'Cook menemen',area:'Your apartment kitchen',type:'selfcater',what:'Eggs, tomatoes, green peppers and cheese make a quick, filling Turkish sahur. Add bread and tea.',price:'≈ RM5–10 pp',mapQ:'market Kadıköy Çarşı'},
- {name:'Late-night restaurants with a sahur menu',area:'Kadıköy and Beyoğlu',type:'eatout',what:'Some restaurants stay open until dawn in Ramadan. Search Maps for "sahur" near your apartment and confirm that night\'s hours before you go out.',price:'Varies',mapQ:'sahur Kadıköy'}
+ {name:'Self-catered at the apartment (recommended)',area:'Beyoğlu',type:'selfcater',what:'Shop after iftar at Migros, BİM, A101 or Şok, or at the neighbourhood grocers around Tünel and Galata: bread, white cheese, olives, eggs, honey, yoghurt, dates and bananas.',price:'≈ RM8–15 pp',mapQ:'supermarket Beyoğlu'},
+ {name:'Cook menemen',area:'Your apartment kitchen',type:'selfcater',what:'Eggs, tomatoes, green peppers and cheese make a quick, filling Turkish sahur. Add bread and tea.',price:'≈ RM5–10 pp',mapQ:'market Beyoğlu Tünel'},
+ {name:'Late-night restaurants with a sahur menu',area:'Beyoğlu and Karaköy',type:'eatout',what:'Some restaurants stay open until dawn in Ramadan. Search Maps for "sahur" near your apartment and confirm that night\'s hours before you go out.',price:'Varies',mapQ:'sahur Beyoğlu'}
 ];
 
 FOOD.kayseri=[
@@ -366,22 +359,41 @@ FOOD.pamukkaleSahur=[
  {name:'Self-catered from a village market',area:'Pamukkale village',type:'selfcater',what:'Buy at iftar time: bread, cheese, eggs, olives, dates, yoghurt and bananas.',price:'≈ RM8–15 pp',mapQ:'market Pamukkale village'}
 ];
 
+FOOD.arrival=[
+ {name:'Dates and water from your carry-on',area:'Istanbul Airport or on board',type:'selfcater',what:'Iftar falls around 6:35 pm Istanbul time, which is while you wait for or sit on your domestic flight. Break your fast with dates and water, then eat properly after landing.',price:'Free',mapQ:'Istanbul Airport'},
+ {name:'Istanbul Airport restaurants and cafés',area:'Terminal, near the domestic gates',type:'eatout',what:'Many airport restaurants offer set iftar menus in Ramadan. Look for "iftar menüsü" boards and pick a simple soup, main and dessert before you board.',price:'≈ RM30–70 pp (airport prices)',mapQ:'Istanbul Airport restaurants',note:'Airport prices are higher than in town. Check the menu for halal and alcohol-free options.'},
+ {name:'Late dinner in Göreme',area:'Your cave hotel or the Göreme main street',type:'hotel',what:'You will reach town around 10–11 pm. Ask your hotel to leave a meal tray, or check ahead which restaurant stays open late. Soup and pide is enough after a long travel day.',price:'Ask the hotel',mapQ:'Göreme restaurants'}
+];
+FOOD.beyoglu=[
+ {name:'Hacı Abdullah Lokantası',area:'Atıf Yılmaz Sk. 9/A, just off İstiklal Avenue',type:'sitdown',what:'Open since 1888, serving Ottoman and Turkish home cooking: hünkar beğendi, lamb tandır, perde pilavı and desserts such as kazandibi. Ramadan menus have included Ottoman şerbet.',price:'≈ RM45–80 pp',mapQ:'Hacı Abdullah Lokantası Beyoğlu',note:'Local guides say it serves no alcohol. Listed hours are about 11:00–22:30. Book for iftar: +90 212 293 85 61.'},
+ {name:'Mahir Lokantası',area:'Beyoğlu, near İstiklal Avenue',type:'budget',what:'A long-running traditional lokanta with counter dishes. Local guides say it serves no alcohol.',price:'≈ RM25–45 pp',mapQ:'Mahir Lokantası Beyoğlu'},
+ {name:'Karaköy Lokantası',area:'Kemankeş Cd. 57, Karaköy',type:'sitdown',alc:true,what:'Turkish home cooking by day. At dinner it turns into a meyhane (tavern) serving wine and rakı. Order from the daily trays.',price:'≈ RM40–70 pp',mapQ:'Karaköy Lokantası',note:'Ask for a table away from the bar, or choose another place for iftar.'},
+ {name:'Karaköy Güllüoğlu',area:'Karaköy',type:'budget',what:'A famous baklava and börek shop. Good for a light iftar of börek, or for dessert.',price:'≈ RM15–30 pp',mapQ:'Karaköy Güllüoğlu'},
+ {name:'Ramazan pidesi, olives and cheese at home',area:'Bakeries and delis around Tünel and Galata',type:'budget',what:'Buy warm Ramazan pidesi, olives and cheese just before iftar and eat at your apartment. Easy on tired travel days.',price:'≈ RM10–20 pp',mapQ:'fırın Beyoğlu Tünel'},
+ {name:'Hamdi Restaurant',area:'Eminönü, just across Galata Bridge',type:'splurge',what:'A terrace over the mosques and the water. Its 2026 iftar set was ₺2,250 pp (≈ RM190).',price:'≈ RM190 pp (2026 price)',mapQ:'Hamdi Restaurant Eminönü'}
+];
+FOOD.inair=[
+ {name:'Dates and water in your cabin bag',area:'On board TK62',type:'selfcater',what:'The flight leaves at 15:20, so iftar at about 6:35 pm Istanbul time comes in the air. Break your fast with dates and water, then eat the meal service.',price:'Free',mapQ:'Istanbul Airport'},
+ {name:'Ask Turkish Airlines about an iftar-friendly meal',area:'Manage booking or Turkish Airlines contact centre',type:'eatout',what:'Your ticket shows a snack meal service. Special requests need at least 24 hours notice, so ask by Mon 15 Feb at the latest, and ask whether a suitable meal can be arranged.',price:'Ask the airline',mapQ:'Turkish Airlines office Istanbul Airport'}
+];
+
 var D=[
-{id:'d1',date:'Tue 9 Feb 2027',short:'Tue 9 Feb',title:'Land at SAW and fly to Göreme',city:'Göreme, Cappadocia',scene:'d1',imsak:'≈ 6:10 am',iftarAt:'≈ 6:10 pm',
- sum:'A light first day. Get from Sabiha Gökçen to your cave hotel, watch sunset over the valleys and break your fast in town. Ramadan is expected to begin around 8–9 Feb, so confirm the date locally.',
+{id:'d1',date:'Tue 9 Feb 2027',short:'Tue 9 Feb',title:'Land at Istanbul Airport and fly on to Cappadocia',city:'Istanbul Airport → Göreme',scene:'d1',imsak:'≈ 5:50 am (Kuala Lumpur)',iftarAt:'≈ 6:35 pm (Istanbul)',
+ sum:'Turkish Airlines TK63 lands at IST at 14:40. Clear immigration, re-check your bag and take an evening domestic flight to Kayseri. You reach Göreme late, so keep the night simple. Ramadan is expected to begin around 8–9 Feb, so confirm the date.',
  transit:[
-  {mode:'✈️ Flight',title:'SAW → Kayseri (ASR) or Nevşehir (NAV)',text:'Take the domestic flight straight after your international arrival. If the two flights are on separate tickets, leave at least 3 hours between landing and the domestic departure for immigration and bags. Check the baggage allowance on the cheap fare.'},
-  {mode:'🚌 Airport shuttle',title:'Airport → Göreme hotel',text:'Book a shared shuttle in advance, about €10 pp from Kayseri (about 1 to 1¼ hours) and similar from Nevşehir (about 1 hour). Send the provider your flight number so they track delays. Some operators take cash only.',
-    alt:'Fully public backup from Kayseri: Havaş airport bus to Kayseri bus station, an intercity bus to Nevşehir, then a minibus (dolmuş) to Göreme. It takes about 3 hours, so use it only if the shuttle falls through.'},
-  {mode:'🚶 On foot',title:'Around Göreme',text:'The town is compact. Your hotel, restaurants and Sunset Point are all walkable.'}
+  {mode:'✈️ TK63',title:'Kuala Lumpur → Istanbul Airport (IST)',text:'Departs 08:15 and lands 14:40. Have sahur before you leave and carry dates and water in your cabin bag (limit 8 kg).'},
+  {mode:'🛂 Immigration',title:'Passport control and bags',text:'Allow 1 to 1½ hours for immigration and bag collection. The domestic flight will be a separate ticket, so you collect your bag and check it in again at the domestic desks.',alt:'Check the domestic baggage allowance. Turkish Airlines EcoFly domestic fares allow 15 kg checked, which is less than the 23 kg on your international ticket.'},
+  {mode:'✈️ Domestic flight',title:'IST → Kayseri (ASR)',text:'Turkish Airlines flies IST → ASR many times a day, about 1 hour 25 minutes. Past schedules had departures at 19:10, 20:20, 20:45 and 21:40, so choose one leaving at least 3 hours after you land. The 19:10 gets you to Göreme earliest. A separate ticket means a delayed TK63 is not protected by the domestic booking.',
+    alt:'Kayseri is the better-served airport. A convenient Nevşehir (NAV) flight, if you find one, is closer to Göreme at about 1 hour by shuttle.'},
+  {mode:'🚌 Airport shuttle',title:'Kayseri Airport → Göreme hotel',text:'Pre-book a shuttle for your arrival time, about €10 pp for a shared one (1 to 1¼ hours). Send the provider your domestic flight number so they track delays, and tell your hotel you will arrive late.'}
  ],
  hl:[
-  {time:'Afternoon',title:'Check in to your cave hotel',text:'Rest and settle in. Cave rooms are cosy and quiet. Ask about a sahur tray for tomorrow.',icon:'🛏️',photo:'Cappadocia cave hotel Göreme room',map:'cave hotel Göreme'},
-  {time:'About 45 min before sunset',title:'Sunset Point over Göreme',text:'A short walk up to a viewpoint over the fairy chimneys. Time your descent for iftar.',icon:'🌇',photo:'Göreme Sunset Point Cappadocia',map:'Göreme Sunset Point',tip:'Carry dates and water in case the sun sets before you are back.'},
-  {time:'Evening',title:'Göreme old town at dusk',text:'Wander the lit-up stone houses and small squares before or after iftar.',icon:'🏘️',photo:'Göreme town Cappadocia evening',map:'Göreme town centre'}
+  {time:'Morning',title:'Sahur and the flight to Istanbul',text:'Eat a good sahur before leaving and pack dates and water in your cabin bag. TK63 is about 11½ hours, so rest on board.',icon:'✈️',photo:'Turkish Airlines Boeing 777 Istanbul Airport',map:'Istanbul Airport'},
+  {time:'Around 6:35 pm',title:'Iftar at the airport or on board',text:'The sun sets around 6:35 pm in Istanbul, while you wait for or sit on your domestic flight. Break your fast with dates and water, then eat after landing.',icon:'🌙',photo:'Istanbul Airport terminal interior',map:'Istanbul Airport',tip:'Keep dates in your pocket and ask the crew for water.'},
+  {time:'Late evening',title:'Check in to your cave hotel',text:'You reach your room around 10–11 pm. Cave rooms are cosy and quiet. Ask about a sahur tray for tomorrow.',icon:'🛏️',photo:'Cappadocia cave hotel Göreme room',map:'cave hotel Göreme'}
  ],
- iftar:FOOD.goreme,sahur:FOOD.goremeSahur,sahurFor:'tomorrow\'s sahur',
- notes:['It is a travel day in the first days of Ramadan. Keep plans light.','Winter nights in Cappadocia drop below freezing. Dress warmly for Sunset Point.','Carry some cash (Turkish lira) for shuttles and small shops.','This plan assumes you land and fly home from Sabiha Gökçen (SAW). If it is Istanbul Airport (IST), the first and last transfers change.']
+ iftar:FOOD.arrival,iftarLabel:'Iftar and dinner options for arrival day',sahur:FOOD.goremeSahur,sahurFor:'tomorrow\'s sahur',
+ notes:['Keep at least 3 hours between landing and your domestic departure. Immigration queues at IST can be long.','Consider the 19:10 or 20:20 flight. Later flights mean a very late arrival in Göreme.','Sunset Point and the old town move to your Day 2 morning and evening.','Special meal requests on Turkish Airlines need 24 hours notice. Ask early if you want one.']
 },
 {id:'d2',date:'Wed 10 Feb 2027',short:'Wed 10 Feb',title:'Cappadocia on foot, dolmuş and horseback',city:'Göreme, Cappadocia',scene:'d2',imsak:'≈ 6:10 am',iftarAt:'≈ 6:10 pm',
  sum:'Your one full day in Cappadocia. Watch the balloons at dawn, visit the rock-cut churches, see Uçhisar Castle, then ride through Rose and Red Valley at sunset. No car needed.',
@@ -438,30 +450,32 @@ var D=[
  iftar:FOOD.pamukkale,sahur:FOOD.pamukkaleSahur,sahurFor:'tomorrow\'s sahur',
  notes:['Winter gate hours differ by source, from about 6 pm to 9 pm. Confirm at the entrance when you arrive.','The ticket is single entry, so do the terraces and Hierapolis in one visit.','Rest after the night bus and keep the afternoon flexible.','Agents at the gate may add an audio guide or extras. Say no thanks if you do not want them.']
 },
-{id:'d5',date:'Sat 13 Feb 2027',short:'Sat 13 Feb',title:'Pamukkale to Istanbul',city:'Pamukkale → Istanbul (Kadıköy)',scene:'d7',imsak:'≈ 6:30 am (Pamukkale)',iftarAt:'≈ 6:35 pm (Istanbul)',
- sum:'A slow morning in the village, then a short flight to Istanbul and the metro to Kadıköy for iftar. Flight schedules vary by day, so pick one that leaves in the early afternoon.',
+{id:'d5',date:'Sat 13 Feb 2027',short:'Sat 13 Feb',title:'Pamukkale to Istanbul',city:'Pamukkale → Istanbul (Beyoğlu)',scene:'d7',imsak:'≈ 6:30 am (Pamukkale)',iftarAt:'≈ 6:35 pm (Istanbul)',
+ sum:'A slow morning in the village, then a short flight to Istanbul Airport and the metro into Beyoğlu, your base for the last three nights. Flight schedules vary by day, so pick one that leaves in the early afternoon.',
  transit:[
   {mode:'🚐 Shuttle',title:'Pamukkale → Denizli Çardak Airport (DNZ)',text:'About 65–70 km, around 1 hour. Take a shared shuttle (about €10–15 pp), or a private transfer (about €50 per vehicle, which is about €17 pp for three). Book through your guesthouse the day before and leave about 3–3½ hours before your flight.',
     alt:'Cheaper but slower: a dolmuş to Denizli bus station, then the Havaş airport bus timed to flights. Allow about 2 hours.'},
-  {mode:'✈️ Flight',title:'DNZ → Sabiha Gökçen (SAW)',text:'About 1¼ hours on AJet or Pegasus. One-way fares were about €40–90 when booked ahead. Check which days and times run, because schedules are limited.',
+  {mode:'✈️ Flight',title:'DNZ → Istanbul Airport (IST)',text:'About 1¼ hours on Turkish Airlines or AJet. One-way fares were about €40–90 when booked ahead. Check which days and times run, since schedules are limited. Landing at IST means you go straight to the M11 metro.',
     alt:'No suitable flight? An overnight bus from Denizli to Istanbul takes about 8–9 hours. If you take it, you arrive on the morning of Day 6.'},
-  {mode:'🚇 Metro M4',title:'SAW → Kadıköy',text:'About 52 minutes. Buy an Istanbulkart at a ticket machine; one card can pay for several people.',dir:['Sabiha Gökçen Airport','Kadıköy Istanbul','transit']}
+  {mode:'🚇 Metro M11 + M2',title:'IST → Gayrettepe → Şişhane or Taksim',text:'Follow the signs two levels down to the M11 and ride to Gayrettepe (about 30–35 minutes, trains roughly every 15 minutes). Change to the M2 and ride south to Taksim (about 3 stops) or Şişhane. Allow 60–75 minutes door to door. Buy an Istanbulkart at a ticket machine; one card can pay for several people.',
+    alt:'Havaist bus HVL-9 runs to Taksim in about 60–90 minutes, for around ₺470 at 2026 prices. A taxi is quicker but costs far more.',dir:['Istanbul Airport','Şişhane Metro Station Istanbul','transit']}
  ],
  hl:[
   {time:'Morning',title:'A last look at the white hillside',text:'Take a slow walk around the village, have sahur leftovers and pack. The terraces glow in the morning light.',icon:'☕',photo:'Pamukkale village morning travertines',map:'Pamukkale village'},
   {time:'Optional',title:'Karahayıt red springs',text:'A short ride from the village. Mineral-red terraces and thermal springs outside the main ticketed site. Check entry and opening hours first.',icon:'🔴',photo:'Karahayıt red springs Pamukkale',map:'Karahayıt Red Water Pamukkale'},
   {time:'Afternoon',title:'Fly to Istanbul',text:'A short hop from the Aegean hills to the Marmara coast.',icon:'✈️',photo:'Denizli Çardak Airport',map:'Denizli Çardak Airport'},
-  {time:'Around iftar',title:'Kadıköy Pier and Moda seafront',text:'After you check in and break your fast, take an evening stroll by the water.',icon:'⛴️',photo:'Kadıköy pier Istanbul evening',map:'Kadıköy Pier Istanbul',tip:'Keep dates and water in your bag in case iftar arrives while you are in transit.'}
+  {time:'Around iftar',title:'Karaköy and Galata Bridge at dusk',text:'After you check in and break your fast, a short walk down to Karaköy and across Galata Bridge. It is free and close to your base. Keep it short after a travel day.',icon:'🌉',photo:'Galata Bridge Karaköy dusk Istanbul',map:'Galata Bridge Istanbul',tip:'Keep dates and water in your bag in case iftar arrives while you are in transit.'}
  ],
- iftar:FOOD.kadikoy,sahur:FOOD.istanbulSahur,sahurFor:'tomorrow\'s sahur',
- notes:['Confirm the DNZ → SAW schedule as soon as you book, since it may not run every day.','If your flight lands late, break your fast with dates and water on board.','Buy sahur groceries on the way from the metro, before shops close.']
+ iftar:FOOD.beyoglu,sahur:FOOD.istanbulSahur,sahurFor:'tomorrow\'s sahur',
+ notes:['Confirm the DNZ → IST schedule as soon as you book, since it may not run every day.','If your flight lands late, break your fast with dates and water on board.','Pick an apartment near the Şişhane or Taksim metro station. It makes the Day 8 airport run simple.','Buy sahur groceries on the way from the metro, before shops close.']
 },
 {id:'d6',date:'Sun 14 Feb 2027',short:'Sun 14 Feb',title:'Sultanahmet: Hagia Sophia, Blue Mosque, cistern and Topkapı',city:'Istanbul (Sultanahmet)',scene:'d5',imsak:'≈ 6:30 am',iftarAt:'≈ 6:35 pm',
  sum:'The old city\'s big four. Do the mosques and the cistern in the morning, then Topkapı Palace in the afternoon, with iftar in the historic quarter.',
  transit:[
-  {mode:'⛴️ Ferry',title:'Kadıköy → Eminönü',text:'Take the Şehir Hatları public ferry from Kadıköy pier, about 20 minutes, and pay with your Istanbulkart.',dir:['Kadıköy Pier','Eminönü Pier Istanbul','transit']},
-  {mode:'🚋 Tram T1',title:'Eminönü → Sultanahmet',text:'Take the T1 tram (Bağcılar–Kabataş) three stops to Sultanahmet, or walk about 15 minutes uphill. Everything is then within about 10 minutes\' walk.'},
-  {mode:'🚇 Return',title:'Sultanahmet → Kadıköy',text:'Take T1 to Eminönü and the ferry back. Check the last ferry times.',alt:'Late-night fallback: T1 to Sirkeci, Marmaray to Ayrılık Çeşmesi, then M4 to Kadıköy.'}
+  {mode:'🚇 Funicular + tram',title:'Beyoğlu → Karaköy → Sultanahmet',text:'From Şişhane or Tünel, take the Tünel funicular down to Karaköy (about 2 minutes), then the T1 tram toward Sultanahmet (about 10 minutes). Pay with your Istanbulkart.',
+    alt:'Walking option: Galata Bridge to Eminönü takes about 15 minutes, then T1 for 3 stops or a 15-minute uphill walk.',dir:['Şişhane Metro Station Istanbul','Sultanahmet Square Istanbul','transit']},
+  {mode:'🚶 On foot',title:'Around Sultanahmet',text:'Hagia Sophia, the Blue Mosque, the Basilica Cistern and Topkapı are all within about 10–15 minutes\' walk of each other.'},
+  {mode:'🚋 Return',title:'Sultanahmet → Beyoğlu',text:'Take T1 back to Karaköy, then the funicular up to Tünel. Trams are busy at iftar, so leave a little before or after.',alt:'Fallback: M2 from Vezneciler to Şişhane, or walk across Galata Bridge from Eminönü, about 15 minutes.'}
  ],
  hl:[
   {time:'Morning',title:'Hagia Sophia',text:'A 6th-century domed church that is now a working mosque. The ground floor is the prayer hall. Foreign visitors sightsee from the upper level with a ticket of about €25. Confirm the current rules on the official ticket site.',icon:'🕌',photo:'Hagia Sophia Istanbul interior dome',map:'Hagia Sophia Istanbul'},
@@ -474,14 +488,14 @@ var D=[
  notes:['Mosques pause visits for about 30–45 minutes around each of the five daily prayers. Plan your order around them.','Dress modestly: covered shoulders and knees, and a headscarf for women in mosques. Shoes come off.','It is a long walking day while fasting. Take the cistern and palace at your own pace and rest in Gülhane Park.']
 },
 {id:'d7',date:'Mon 15 Feb 2027',short:'Mon 15 Feb',title:'Golden Horn: Balat, Eyüp and Süleymaniye',city:'Istanbul (Golden Horn)',scene:'d6',imsak:'≈ 6:30 am',iftarAt:'≈ 6:35 pm',
- sum:'A quieter day along the Golden Horn: colourful Balat, the pilgrimage mosque of Eyüp, a hilltop view, and Sinan\'s Süleymaniye. Cross Galata Bridge at dusk and ferry home for iftar. No bazaars.',
+ sum:'A quieter day along the Golden Horn: colourful Balat, the pilgrimage mosque of Eyüp, a hilltop view, and Sinan\'s Süleymaniye. Walk back across Galata Bridge at dusk for iftar near your base. No bazaars.',
  transit:[
-  {mode:'⛴️ Ferry',title:'Kadıköy → Eminönü',text:'The public ferry takes about 20 minutes.',dir:['Kadıköy Pier','Eminönü Pier Istanbul','transit']},
+  {mode:'🚶 On foot',title:'Beyoğlu → Karaköy → Eminönü',text:'Take the Tünel funicular down to Karaköy, then walk across Galata Bridge to Eminönü, about 15 minutes.',dir:['Karaköy Istanbul','Eminönü Pier Istanbul','walking']},
   {mode:'🚋 Tram T5',title:'Eminönü → Fener / Balat → Eyüp',text:'The T5 tram runs along the Golden Horn to Fener, Balat, Ayvansaray and Eyüp Sultan. Hop off at Fener or Balat first, then continue to Eyüp. Confirm the line on your Istanbul transit app.',
     alt:'If T5 is disrupted, take a city bus from Eminönü toward Eyüp, or a taxi shared three ways.'},
   {mode:'🚡 Cable car',title:'Eyüp → Pierre Loti Hill',text:'A short cable car climbs to the hilltop café and viewpoint. It can close in bad weather, so check first. Walk down through the old cemetery if you prefer.'},
   {mode:'🚋 Tram + walk',title:'Eyüp → Süleymaniye',text:'Take T5 back toward Eminönü, then walk about 15–20 minutes uphill to Süleymaniye.'},
-  {mode:'⛴️ Ferry',title:'Galata Bridge → Karaköy → Kadıköy',text:'Walk across Galata Bridge at dusk to Karaköy pier, then take the Karaköy–Kadıköy ferry home.'}
+  {mode:'🚶 On foot',title:'Galata Bridge → Karaköy → Beyoğlu',text:'Walk back across Galata Bridge at dusk, then take the Tünel funicular up to Beyoğlu and break your fast nearby.'}
  ],
  hl:[
   {time:'Morning',title:'Fener and Balat',text:'Steep lanes lined with painted houses, old churches and small cafés. Walk, look and photograph.',icon:'🎨',photo:'Balat Istanbul colourful houses',map:'Balat Istanbul'},
@@ -490,31 +504,31 @@ var D=[
   {time:'Afternoon',title:'Süleymaniye Mosque',text:'Sinan\'s great mosque above the Golden Horn, with the tombs of Süleyman and Sinan and a terrace with broad views. Free to visit outside prayer times.',icon:'🕌',photo:'Süleymaniye Mosque Istanbul',map:'Süleymaniye Mosque Istanbul'},
   {time:'Dusk',title:'Galata Bridge at sunset',text:'Fishermen line the rails while the skyline lights up. Galata Tower looks great from below, so skip the paid climb.',icon:'🌉',photo:'Galata Bridge sunset Istanbul',map:'Galata Bridge Istanbul'}
  ],
- iftar:FOOD.kadikoy,sahur:FOOD.istanbulSahur,sahurFor:'tomorrow\'s sahur before your flight',
- notes:['Eyüp is very busy near iftar. Aim to finish there by mid-afternoon.','Ferries are lovely but can be rough and cold. Keep your jacket on and a hood or scarf handy.','Shopping is deliberately left out. The Grand Bazaar and Spice Bazaar are not in this plan.','Dolmabahçe Palace is closed on Mondays, so it is not included.']
+ iftar:FOOD.beyoglu,sahur:FOOD.istanbulSahur,sahurFor:'tomorrow\'s sahur before your flight',
+ notes:['Eyüp is very busy near iftar. Aim to finish there by mid-afternoon.','The wind along the Golden Horn is cold. Keep a hood or scarf handy.','Shopping is deliberately left out. The Grand Bazaar and Spice Bazaar are not in this plan.','Dolmabahçe Palace is closed on Mondays, so it is not included.','Tonight, pack and set your alarm. Tomorrow you leave for the airport by about 10:45.']
 },
-{id:'d8',date:'Tue 16 Feb 2027',short:'Tue 16 Feb',title:'Sahur, metro to SAW and fly home',city:'Kadıköy → SAW',scene:'d7',imsak:'≈ 6:25 am',iftarAt:'≈ 6:35 pm',
- sum:'Sahur, tidy up and take the M4 metro straight to the airport. You have time for a slow morning only if your flight is late.',
+{id:'d8',date:'Tue 16 Feb 2027',short:'Tue 16 Feb',title:'Sahur, metro to IST and fly home',city:'Beyoğlu → Istanbul Airport',scene:'d7',imsak:'≈ 6:25 am',iftarAt:'≈ 6:35 pm (in the air)',
+ sum:'Sahur, pack and take the M2 and M11 metro to Istanbul Airport. TK62 leaves at 15:20, so you have a relaxed morning. You land in Kuala Lumpur at 06:35 on Wed 17 Feb.',
  transit:[
-  {mode:'🚇 Metro M4',title:'Kadıköy → Sabiha Gökçen Airport',text:'M4 runs directly from Kadıköy to SAW in about 52 minutes, with trains every 5–6 minutes. It normally runs 06:00 to midnight. Leave about 4½ hours before your flight to allow for the ride, check-in and security.',dir:['Kadıköy Metro Station Istanbul','Sabiha Gökçen Airport','transit'],
-    alt:'Backups: the Havabus SG-1 to and from Kadıköy (about 50 minutes, roughly hourly, longer in traffic) or a taxi (about 30–45 minutes; agree the fare or use the meter).'}
+  {mode:'🚇 Metro M2 + M11',title:'Beyoğlu → Gayrettepe → Istanbul Airport',text:'Ride the M2 north to Gayrettepe, then the M11 to the airport (about 30–35 minutes). Allow 60–75 minutes door to door. Your ticket says to be at the airport at least 3 hours before departure, which is 12:20, so leave your base by about 10:45. Baggage drop must be finished at least 75 minutes before departure.',dir:['Şişhane Metro Station Istanbul','Istanbul Airport','transit'],
+    alt:'Backup: Havaist HVL-9 from Taksim takes about 60–90 minutes depending on traffic. Leave an hour earlier if you choose it.'}
  ],
  hl:[
-  {time:'Before dawn',title:'Sahur at the apartment',text:'Eat well and pack the last things. Check that passports, chargers and the Istanbulkart are in your bag.',icon:'🥣',photo:'Turkish sahur breakfast menemen',map:'Kadıköy Istanbul'},
-  {time:'If your flight is late',title:'Moda seafront morning walk',text:'A gentle stroll by the water, ending at Kadıköy pier. Keep it short and leave time for the metro.',icon:'🌊',photo:'Moda seafront Kadıköy Istanbul',map:'Moda Sahil Kadıköy'},
-  {time:'Departure',title:'Fly SAW → Kuala Lumpur',text:'Sabiha Gökçen is where you land and fly out. Some airlines can serve iftar or sahur meals on request. Ask when checking in or booking.',icon:'✈️',photo:'Sabiha Gökçen Airport Istanbul',map:'Sabiha Gökçen Airport'}
+  {time:'Before dawn',title:'Sahur at the apartment',text:'Eat well and pack the last things. Check that passports, chargers and the Istanbulkart are in your bag.',icon:'🥣',photo:'Turkish sahur breakfast menemen',map:'Beyoğlu Istanbul'},
+  {time:'Morning',title:'A last quiet walk',text:'If you wake early, take a short walk through Galata and Karaköy before you leave. Keep it brief.',icon:'🌊',photo:'Galata Karaköy morning Istanbul',map:'Galata Tower Istanbul'},
+  {time:'15:20',title:'Fly Istanbul → Kuala Lumpur (TK62)',text:'Departs 15:20 and lands 06:35 on Wed 17 Feb. Iftar falls at about 6:35 pm Istanbul time, in the air.',icon:'✈️',photo:'Istanbul Airport departures',map:'Istanbul Airport'}
  ],
- iftar:FOOD.kadikoy,sahur:FOOD.istanbulSahur,sahurFor:'this morning',iftarLabel:'Iftar in Istanbul or on the plane',
- notes:['Leave earlier if you have checked baggage.','If your flight crosses sunset, pack dates and water and ask the crew about iftar meals.','Top up or keep your Istanbulkart for a future trip.']
+ iftar:FOOD.inair,iftarLabel:'Iftar on the plane',sahur:FOOD.istanbulSahur,sahurFor:'this morning',
+ notes:['Leave the apartment by about 10:45. Allow more time if you plan to carry heavy bags on the metro.','Your ticket shows a snack meal service. Special requests need 24 hours notice.','Top up or keep your Istanbulkart for a future trip.']
 }
 ];
 
-var BOOK=['SAW → Kayseri/Nevşehir flight (one-way; check baggage rules)','Airport shuttle to Göreme (share your flight number)','Göreme cave hotel, 2 nights (ask about a sahur tray)','Sunset horse ride (free cancellation; confirm once the forecast is clear)','Göreme → Kayseri bus on Day 3 (Obilet, around 8:30–9:00 am)','Kayseri → Denizli overnight bus on Day 3 (around 8–9 pm; or a flight via Istanbul)','Pamukkale guesthouse, 1 night (ask about bag drop, early check-in and a sahur tray)','Pamukkale and Hierapolis ticket, about €30 pp (single entry)','Shuttle from Pamukkale to Denizli Çardak Airport (shared or private)','DNZ → SAW flight on Day 5 (check which days and times run)','Kadıköy apartment, 3 nights','Istanbulkart (one card can pay for several people)','eSIM or roaming plan'];
+var BOOK=['IST → Kayseri domestic flight on Day 1 (leave at least 3 hours after landing; check the 15 kg domestic baggage)','Airport shuttle Kayseri → Göreme (share your domestic flight number)','Göreme cave hotel, 2 nights (tell them you arrive late; ask about a sahur tray)','Sunset horse ride (free cancellation; confirm once the forecast is clear)','Göreme → Kayseri bus on Day 3 (Obilet, around 8:30–9:00 am)','Kayseri → Denizli overnight bus on Day 3 (around 8–9 pm; or a flight via Istanbul)','Pamukkale guesthouse, 1 night (ask about bag drop, early check-in and a sahur tray)','Pamukkale and Hierapolis ticket, about €30 pp (single entry)','Shuttle from Pamukkale to Denizli Çardak Airport (shared or private)','DNZ → IST flight on Day 5 (check which days and times run)','Beyoğlu apartment, 3 nights (near Şişhane or Taksim metro)','Istanbulkart (one card can pay for several people)','Special meal request for TK62, at least 24 hours before 16 Feb','eSIM or roaming plan'];
 var PACK=['Thermal base layers','Warm waterproof jacket','Waterproof gloves, beanie and scarf','Sunglasses (snow glare at Erciyes)','Waterproof boots with good grip','Thick socks and a small towel for barefoot travertines','Light daypack for the Erciyes day','Neck pillow and a layer for the night bus','Compact umbrella','Lip balm and moisturiser','Modest clothing for mosques (headscarf for women)','Small travel prayer mat','Dates and a water bottle','Power bank','Plug adapter (Turkey uses Type C/F, Malaysia uses Type G)','Passport copies'];
 
 var BUDGET=[
- ['KUL ⇄ SAW flight (your quote for 8–14 Feb; recheck for 9–16 Feb)','1,953','1,953'],
- ['SAW → Kayseri, one-way','150','200'],
+ ['KUL ⇄ IST flights, Turkish Airlines (booked: RM3,574 for 2 = RM1,787 pp)','1,787','1,787'],
+ ['IST → Kayseri domestic, one-way (evening flight)','200','400'],
  ['Airport shuttle to Göreme','45','60'],
  ['Göreme cave hotel, 2 nights (shared)','150','300'],
  ['Göreme Open-Air Museum and Uçhisar entry','60','100'],
@@ -525,10 +539,10 @@ var BUDGET=[
  ['Pamukkale guesthouse, 1 night (shared)','40','80'],
  ['Pamukkale and Hierapolis ticket (€30)','140','150'],
  ['Pamukkale shuttle and dolmuş','50','80'],
- ['Flight Denizli → SAW','190','400'],
- ['Kadıköy apartment, 3 nights (shared by 3)','230','380'],
+ ['Flight Denizli → IST','190','400'],
+ ['Beyoğlu apartment, 3 nights (shared by 3)','250','420'],
  ['Food (fasting: sahur plus iftar)','280','450'],
- ['Istanbul transport (Istanbulkart, ferries, metro)','60','100'],
+ ['Istanbul transport (Istanbulkart: M11, M2, T1, funicular)','60','100'],
  ['Topkapı with Harem, Basilica Cistern','340','390'],
  ['eSIM','30','50'],
  ['Spare money and small extras','150','150']
@@ -600,21 +614,22 @@ function dayView(i){
 function planView(){
   var h='<h2 style="margin-top:6px">The route</h2><p class="ui" style="color:var(--muted);max-width:60ch">Tap a place to jump to that day. Every leg is by plane, bus, train, tram, ferry or metro.</p>';
   var stops=[
-   ['Sabiha Gökçen (SAW)','Land Tue 9 Feb','d1','Flight to Cappadocia, about 1½ hours'],
+   ['Istanbul Airport (IST)','Land Tue 9 Feb at 14:40 (TK63)','d1','Domestic flight to Kayseri, about 1½ hours, then shuttle'],
    ['Göreme, Cappadocia','Days 1–2 · 2 nights','d1','Bus to Kayseri, about 1½ hours'],
    ['Kayseri and Mount Erciyes','Day 3 · snow day','d3','Overnight bus, about 10–11 hours'],
    ['Pamukkale','Days 4–5 · 1 night','d4','Shuttle and flight to Istanbul, about 4 hours in all'],
-   ['Istanbul (Kadıköy base)','Days 5–8 · 3 nights','d5','M4 metro to the airport, about 52 minutes'],
-   ['Sabiha Gökçen (SAW)','Fly home Tue 16 Feb','d8','']
+   ['Istanbul (Beyoğlu base)','Days 5–8 · 3 nights','d5','M2 + M11 metro to the airport, about 60–75 minutes'],
+   ['Istanbul Airport (IST)','Fly home Tue 16 Feb at 15:20 (TK62)','d8','']
   ];
   h+='<ul class="route">'+stops.map(function(s){
     return '<li class="stop"><div class="dot"><i></i><b></b></div><div><button data-go="'+s[2]+'"><h3>'+esc(s[0])+'</h3><span class="sub">'+esc(s[1])+'</span></button>'+(s[3]?'<div class="leg">'+esc(s[3])+'</div>':'')+'</div></li>';
   }).join('')+'</ul>';
+  h+='<h2>Your flights</h2><div class="cards2"><div class="card"><h4>Tue 9 Feb · TK63</h4><p>Kuala Lumpur (KUL) 08:15 → Istanbul Airport (IST) 14:40. 23 kg checked and 8 kg cabin.</p></div><div class="card"><h4>Tue 16 Feb · TK62</h4><p>Istanbul Airport (IST) 15:20 → Kuala Lumpur (KUL) 06:35 on Wed 17 Feb. Be at the airport at least 3 hours before.</p></div><div class="card"><h4>Booking note</h4><p>This booking lists two passengers. Make sure your third traveller is booked on the same flights.</p></div></div>';
   h+='<h2>Day by day</h2><div class="glance">'+D.map(function(d,i){
     return '<button class="gcard" data-go="'+d.id+'"><div class="d">Day '+(i+1)+' · '+esc(d.short)+'</div><h4>'+esc(d.title)+'</h4><div class="d">'+esc(d.city)+'</div><div class="f">Sahur '+esc(d.imsak)+' · Iftar '+esc(d.iftarAt)+'</div></button>';
   }).join('')+'</div>';
   h+='<h2>Book first</h2><p class="legend ui">Tick items off as you book them. Your ticks are saved in this browser only.</p>'+checklist('book',BOOK);
-  h+='<h2>How to read this guide</h2><div class="notes"><ul><li>Fasting times are estimates from sun position for each city. Confirm with Diyanet or your prayer app.</li><li>Every day lists iftar options and sahur options, with a halal note on each.</li><li>Shopping stops are left out on purpose, including the Grand Bazaar and Spice Bazaar.</li><li>The route uses one overnight bus (Day 3) to reach Pamukkale. A flight alternative is listed in the Day 3 steps.</li><li>This plan assumes you land and fly out of Sabiha Gökçen (SAW). If it is Istanbul Airport (IST), tell me and I will change the transfers.</li><li>This is a draft. Tell me what to change: pace, budget, restaurants or days.</li></ul></div>';
+  h+='<h2>How to read this guide</h2><div class="notes"><ul><li>Fasting times are estimates from sun position for each city. Confirm with Diyanet or your prayer app.</li><li>Every day lists iftar options and sahur options, with a halal note on each.</li><li>Shopping stops are left out on purpose, including the Grand Bazaar and Spice Bazaar.</li><li>The route uses one overnight bus (Day 3) to reach Pamukkale. A flight alternative is listed in the Day 3 steps.</li><li>The flights match your Turkish Airlines ticket: land at IST on Tue 9 Feb at 14:40, and fly home from IST on Tue 16 Feb at 15:20.</li><li>This is a draft. Tell me what to change: pace, budget, restaurants or days.</li></ul></div>';
   return h;
 }
 
@@ -634,14 +649,14 @@ function tipsView(){
    BUDGET.map(function(r){return '<tr><td>'+esc(r[0])+'</td><td class="n">'+r[1]+'</td><td class="n">'+r[2]+'</td></tr>';}).join('')+
    '<tr class="total"><td>Total per person</td><td class="n">'+fmt(lo)+'</td><td class="n">'+fmt(hi)+'</td></tr>'+
    '<tr class="total"><td>Group of 3</td><td class="n">'+fmt(lo*3)+'</td><td class="n">'+fmt(hi*3)+'</td></tr></tbody></table></div>';
-  h+='<p class="legend ui" style="margin-top:10px">Everything except the KUL flight is an estimate. Converted at about 12 TL = RM1 and €1 = RM4.7. Lira prices may rise 10–20% by February. There is no balloon flight, no skiing, no car rental and no shopping in this total. The KUL flight is your earlier quote for 8–14 Feb, so recheck it for 9–16 Feb. The optional Hagia Sophia upper-level ticket is about €25 (≈ RM105) on top.</p>';
+  h+='<p class="legend ui" style="margin-top:10px">Everything except the KUL flight is an estimate. Converted at about 12 TL = RM1 and €1 = RM4.7. Lira prices may rise 10–20% by February. There is no balloon flight, no skiing, no car rental and no shopping in this total. The KUL flight row is from your Turkish Airlines booking (RM3,574 for two passengers, so RM1,787 each). The fare for your third traveller may differ. The optional Hagia Sophia upper-level ticket is about €25 (≈ RM105) on top.</p>';
   h+='<h2>Weather in February</h2><div class="cards2">'+
    '<div class="card"><h4>Göreme</h4><p>Roughly −5 to 6 °C. Snow and ice are common. Coldest at dawn.</p></div>'+
    '<div class="card"><h4>Erciyes</h4><p>Roughly −12 to −2 °C up the mountain, with strong wind and bright snow glare.</p></div>'+
    '<div class="card"><h4>Pamukkale</h4><p>Roughly 3 to 13 °C, often damp. The terrace water is cold, and rain is possible.</p></div>'+
    '<div class="card"><h4>Istanbul</h4><p>Roughly 3 to 10 °C. Rain about half the days, and a cold wind off the water.</p></div></div>';
   h+='<h2>Packing</h2>'+checklist('pack',PACK);
-  h+='<h2>Getting around Istanbul</h2><div class="notes"><ul><li>An Istanbulkart pays for metro, Marmaray, trams, buses and ferries. One card can pay for several people.</li><li>M4 metro links Kadıköy and SAW in about 52 minutes and connects to Marmaray at Ayrılık Çeşmesi.</li><li>Ferries from Kadıköy to Eminönü and Karaköy are the scenic, cheap way across.</li></ul></div>';
+  h+='<h2>Getting around Istanbul</h2><div class="notes"><ul><li>An Istanbulkart pays for metro, Marmaray, trams, buses and ferries. One card can pay for several people.</li><li>The M11 metro links Istanbul Airport and Gayrettepe in about 30–35 minutes. Change there to the M2 for Taksim and Şişhane. Door to door, allow 60–75 minutes.</li><li>The Tünel funicular links Beyoğlu and Karaköy in about 2 minutes. From Karaköy, the T1 tram runs to Sultanahmet, and Galata Bridge is a 15-minute walk to Eminönü.</li></ul></div>';
   h+='<h2>Ramadan tips</h2><div class="notes"><ul><li>Arrive at restaurants 30–45 minutes before iftar. Popular places fill quickly.</li><li>Carry dates and water in case iftar arrives while you travel.</li><li>Konya is very devout, so expect quiet days and busy evenings.</li><li>Fasting is easier in the cold, but the long walking days add up. Do the heaviest walking in the morning.</li></ul></div>';
   h+='<h2>What this plan leaves out</h2><div class="notes"><ul><li>Shopping: the Grand Bazaar, Spice Bazaar and shopping streets.</li><li>Car-only sights: Derinkuyu, Ihlara Valley, Sultanhanı Caravanserai, Paşabağ and Devrent.</li><li>Konya and the Mevlana Museum, which were in the earlier 7-day plan.</li><li>Skiing at Erciyes. The day is a gondola and snow-play day instead.</li><li>A balloon flight. Watching from the ground is free.</li></ul></div>';
   return h;
